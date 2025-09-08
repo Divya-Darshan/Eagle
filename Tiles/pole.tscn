@@ -1,0 +1,120 @@
+[gd_scene load_steps=5 format=3 uid="uid://da8iu04wpmkii"]
+
+[ext_resource type="Script" path="res://Tiles/pole.gd" id="1_nl635"]
+[ext_resource type="Texture2D" uid="uid://b07k3lrp011pa" path="res://Tiles/Style 1/PipeStyle1.png" id="1_unko7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1pac1"]
+size = Vector2(20.732, 18.9632)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qn1vm"]
+
+[node name="poll" type="Area2D"]
+script = ExtResource("1_nl635")
+
+[node name="PipeStyle1" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-0.968643, 0.558792)
+scale = Vector2(2.11498, 2.11498)
+texture = ExtResource("1_unko7")
+region_enabled = true
+region_rect = Rect2(-0.514587, 0, 32.5665, 60.5923)
+
+[node name="PipeStyle2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-0.968643, 95)
+scale = Vector2(2.11498, 2.11498)
+texture = ExtResource("1_unko7")
+region_enabled = true
+region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
+
+[node name="PipeStyle3" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-0.968643, 169)
+scale = Vector2(2.11498, 2.11498)
+texture = ExtResource("1_unko7")
+region_enabled = true
+region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
+
+[node name="PipeStyle4" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-0.968643, 234)
+scale = Vector2(2.11498, 2.11498)
+texture = ExtResource("1_unko7")
+region_enabled = true
+region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
+
+[node name="PipeStyle5" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-0.968643, 305)
+scale = Vector2(2.11498, 2.11498)
+texture = ExtResource("1_unko7")
+region_enabled = true
+region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
+
+[node name="PipeStyle6" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-0.968643, 377)
+scale = Vector2(2.11498, 2.11498)
+texture = ExtResource("1_unko7")
+region_enabled = true
+region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
+
+[node name="PipeStyle7" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-0.968643, 448)
+scale = Vector2(2.11498, 2.11498)
+texture = ExtResource("1_unko7")
+region_enabled = true
+region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
+
+[node name="PipeStyle8" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-0.968643, 518)
+scale = Vector2(2.11498, 2.11498)
+texture = ExtResource("1_unko7")
+region_enabled = true
+region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
+
+[node name="PipeStyle9" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-0.968643, 591)
+scale = Vector2(2.11498, 2.11498)
+texture = ExtResource("1_unko7")
+region_enabled = true
+region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
+
+[node name="PipeStyle10" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-0.968643, 659)
+scale = Vector2(2.11498, 2.11498)
+texture = ExtResource("1_unko7")
+region_enabled = true
+region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
+
+[node name="PipeStyle11" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-0.968643, 732)
+scale = Vector2(2.11498, 2.11498)
+texture = ExtResource("1_unko7")
+region_enabled = true
+region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 312)
+scale = Vector2(2.76349, -39.258)
+shape = SubResource("RectangleShape2D_1pac1")
+
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
+position = Vector2(-21, -919)
+scale = Vector2(66.1889, 85.9932)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(4, -596)
+scale = Vector2(16.8064, -158.235)
+shape = SubResource("RectangleShape2D_qn1vm")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenEnabler2D" to="." method="_on_visible_on_screen_enabler_2d_screen_exited"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

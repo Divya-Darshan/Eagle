@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://cakim23owrjr3"]
+
+[ext_resource type="Script" path="res://global/node.gd" id="1_t6u6p"]
+
+[node name="Node" type="Node"]
+script = ExtResource("1_t6u6p")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="CanvasLayer/Control"]
+texture_filter = 1
+offset_left = 1038.0
+offset_top = 8.0
+offset_right = 1078.0
+offset_bottom = 31.0
+scale = Vector2(2.64579, 2.03773)
+text = " "
+metadata/_edit_use_anchors_ = true

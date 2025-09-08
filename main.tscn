@@ -1,0 +1,75 @@
+[gd_scene load_steps=5 format=3 uid="uid://cp8q5fj3di6kd"]
+
+[ext_resource type="PackedScene" uid="uid://c6g18e2vqf0b7" path="res://Player/player.tscn" id="1_cpyrx"]
+[ext_resource type="Script" path="res://main.gd" id="1_yjt1p"]
+[ext_resource type="Texture2D" uid="uid://ddfnnbvcnijck" path="res://Background/Background1.png" id="2_00mfo"]
+[ext_resource type="PackedScene" uid="uid://cakim23owrjr3" path="res://global/score.tscn" id="4_dp014"]
+
+[node name="main" type="Node2D"]
+script = ExtResource("1_yjt1p")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(-7, 396)
+motion_mirroring = Vector2(1156.31, 0)
+
+[node name="Background1" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+texture_filter = 1
+position = Vector2(570, 97)
+scale = Vector2(4.51754, 4.51754)
+texture = ExtResource("2_00mfo")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(-7, 249)
+motion_mirroring = Vector2(1156.31, 0)
+
+[node name="Background1" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture_filter = 1
+position = Vector2(570, 97)
+scale = Vector2(4.51754, 4.51754)
+texture = ExtResource("2_00mfo")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(-7, 94)
+motion_mirroring = Vector2(1156.31, 0)
+
+[node name="Background1" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+texture_filter = 1
+position = Vector2(570, 97)
+scale = Vector2(4.51754, 4.51754)
+texture = ExtResource("2_00mfo")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_cpyrx")]
+position = Vector2(595, 305)
+scale = Vector2(4.91812, 4.91812)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(-4.06659, 3.65993)
+limit_top = -200
+limit_bottom = 800
+position_smoothing_enabled = true
+position_smoothing_speed = 10.0
+rotation_smoothing_enabled = true
+
+[node name="Node" parent="." instance=ExtResource("4_dp014")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="CanvasLayer/Control"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 1038.0
+offset_top = 8.0
+offset_right = 1078.0
+offset_bottom = 31.0
+scale = Vector2(2.64579, 2.03773)
+text = " "
+metadata/_edit_use_anchors_ = true
