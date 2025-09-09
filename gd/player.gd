@@ -3,7 +3,7 @@ extends CharacterBody2D
 const GRAVITY: float = 1000.0      # Pulls bird down
 const FLAP_STRENGTH: float = -350.0 # Upward force when tapping
 const FORWARD_SPEED: float = 200.0  # Constant forward speed
-const MAX_ROTATION: float = 0.4     # Max tilt in radians (~23 degrees)
+const MAX_ROTATION: float = 0.9     # Max tilt in radians (~23 degrees)
 @onready var val: AudioStreamPlayer2D = $val
 
 func _physics_process(delta: float) -> void:
