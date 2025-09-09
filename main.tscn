@@ -1,10 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://cp8q5fj3di6kd"]
+[gd_scene load_steps=7 format=3 uid="uid://cp8q5fj3di6kd"]
 
 [ext_resource type="PackedScene" uid="uid://c6g18e2vqf0b7" path="res://Player/player.tscn" id="1_cpyrx"]
 [ext_resource type="Script" path="res://main.gd" id="1_yjt1p"]
 [ext_resource type="Texture2D" uid="uid://ddfnnbvcnijck" path="res://Background/Background1.png" id="2_00mfo"]
+[ext_resource type="AudioStream" uid="uid://dkt4slhhtd3ge" path="res://sfx/dead_A01.mp3" id="3_yabrd"]
 [ext_resource type="PackedScene" uid="uid://cakim23owrjr3" path="res://global/score.tscn" id="4_dp014"]
-[ext_resource type="FontFile" uid="uid://b07xmv84cnmcm" path="res://fonts/m6x11.ttf" id="6_feds7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q8jwq"]
 
 [node name="main" type="Node2D"]
 script = ExtResource("1_yjt1p")
@@ -20,6 +22,12 @@ limit_bottom = 800
 position_smoothing_enabled = true
 position_smoothing_speed = 10.0
 rotation_smoothing_enabled = true
+
+[node name="dead" type="AudioStreamPlayer2D" parent="CharacterBody2D"]
+process_mode = 3
+position = Vector2(-120.981, -62.0156)
+scale = Vector2(0.20333, 0.20333)
+stream = ExtResource("3_yabrd")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
@@ -107,27 +115,18 @@ texture = ExtResource("2_00mfo")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="Control" type="Control" parent="CanvasLayer"]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-metadata/_edit_use_anchors_ = true
+[node name="Area2D" type="Area2D" parent="CanvasLayer"]
+position = Vector2(5, 8)
 
-[node name="Label" type="Label" parent="CanvasLayer/Control"]
-texture_filter = 1
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -14.7
-anchor_top = 0.25
-anchor_right = -14.7
-anchor_bottom = 0.25
-offset_left = 1038.0
-offset_top = 8.0
-offset_right = 1078.0
-offset_bottom = 31.0
-scale = Vector2(4.33881, 3.34165)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("6_feds7")
-text = " gg"
-metadata/_edit_use_anchors_ = true
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/Area2D"]
+position = Vector2(592, 802)
+scale = Vector2(65.4591, 0.473982)
+shape = SubResource("RectangleShape2D_q8jwq")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="CanvasLayer/Area2D"]
+position = Vector2(619, -179)
+scale = Vector2(68.5699, 0.480831)
+shape = SubResource("RectangleShape2D_q8jwq")
+
+[connection signal="finished" from="CharacterBody2D/dead" to="." method="_on_dead_finished"]
+[connection signal="body_entered" from="CanvasLayer/Area2D" to="." method="_on_area_2d_body_entered"]

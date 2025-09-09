@@ -1,26 +1,43 @@
-[gd_scene load_steps=2 format=3 uid="uid://cakim23owrjr3"]
+[gd_scene load_steps=4 format=3 uid="uid://cakim23owrjr3"]
 
 [ext_resource type="Script" path="res://global/node.gd" id="1_t6u6p"]
+[ext_resource type="Texture2D" uid="uid://iilw6k8vg778" path="res://icon/coin_small.png" id="2_4sv75"]
+[ext_resource type="FontFile" uid="uid://b07xmv84cnmcm" path="res://fonts/m6x11.ttf" id="3_3mt4a"]
 
 [node name="Node" type="Node"]
 script = ExtResource("1_t6u6p")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="Control" type="Control" parent="CanvasLayer"]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="sprite" type="Sprite2D" parent="CanvasLayer"]
+texture_filter = 1
+position = Vector2(504, 30)
+scale = Vector2(2.42575, 2.42575)
+texture = ExtResource("2_4sv75")
+region_enabled = true
+region_rect = Rect2(0, 0, 16, 16)
 metadata/_edit_use_anchors_ = true
 
-[node name="Label" type="Label" parent="CanvasLayer/Control"]
+[node name="Label" type="Label" parent="CanvasLayer"]
 texture_filter = 1
-layout_mode = 0
-offset_left = 1038.0
-offset_top = 8.0
-offset_right = 1078.0
-offset_bottom = 31.0
+offset_left = 528.0
+offset_top = 18.0
+offset_right = 568.0
+offset_bottom = 41.0
 scale = Vector2(2.64579, 2.03773)
-text = " "
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.423529)
+theme_override_fonts/font = ExtResource("3_3mt4a")
+metadata/_edit_use_anchors_ = true
+
+[node name="zero" type="Label" parent="CanvasLayer"]
+visible = false
+texture_filter = 1
+offset_left = 528.0
+offset_top = 18.0
+offset_right = 568.0
+offset_bottom = 41.0
+scale = Vector2(2.64579, 2.03773)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.423529)
+theme_override_fonts/font = ExtResource("3_3mt4a")
+text = "0"
 metadata/_edit_use_anchors_ = true

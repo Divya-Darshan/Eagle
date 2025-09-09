@@ -1,5 +1,6 @@
 extends Node2D
 
+@onready var dead: AudioStreamPlayer2D = $CharacterBody2D/dead
 @onready var pole_scene := preload("res://Tiles/pole.tscn")
 @onready var camera_2d: Camera2D = $CharacterBody2D/Camera2D
 const START_GAP_SIZE := 500       # initial vertical gap
@@ -58,3 +59,13 @@ func spawn_pipe_pair() -> void:
 	add_child(bottom_pipe)
 	bottom_pipe.global_position = Vector2(spawn_x, gap_center_y + gap_size / 2)
 	bottom_pipe.set("velocity", Vector2(PIPE_SPEED, 0))
+
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	get_tree().paused = true
+	dead.play()
+
+func _on_dead_finished() -> void:
+	await get_tree().create_timer(0.5).timeout
+	get_tree().paused = false
+	get_tree().reload_current_scene()
