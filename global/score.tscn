@@ -16,6 +16,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="CanvasLayer/Control"]
 texture_filter = 1
+layout_mode = 0
 offset_left = 1038.0
 offset_top = 8.0
 offset_right = 1078.0

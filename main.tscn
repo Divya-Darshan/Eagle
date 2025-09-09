@@ -8,6 +8,18 @@
 [node name="main" type="Node2D"]
 script = ExtResource("1_yjt1p")
 
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_cpyrx")]
+position = Vector2(595, 305)
+scale = Vector2(4.91812, 4.91812)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(-4.06659, 3.65993)
+limit_top = -200
+limit_bottom = 800
+position_smoothing_enabled = true
+position_smoothing_speed = 10.0
+rotation_smoothing_enabled = true
+
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -39,18 +51,6 @@ texture_filter = 1
 position = Vector2(570, 97)
 scale = Vector2(4.51754, 4.51754)
 texture = ExtResource("2_00mfo")
-
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_cpyrx")]
-position = Vector2(595, 305)
-scale = Vector2(4.91812, 4.91812)
-
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
-position = Vector2(-4.06659, 3.65993)
-limit_top = -200
-limit_bottom = 800
-position_smoothing_enabled = true
-position_smoothing_speed = 10.0
-rotation_smoothing_enabled = true
 
 [node name="Node" parent="." instance=ExtResource("4_dp014")]
 

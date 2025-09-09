@@ -1,5 +1,6 @@
 extends Area2D
 
+@onready var rect: ColorRect = $rect
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -16,6 +17,7 @@ func _on_visible_on_screen_enabler_2d_screen_exited() -> void:
 
 
 func _on_body_entered(body: Node2D) -> void:
+	rect.visible = true
 	get_tree().paused = true
 
 
