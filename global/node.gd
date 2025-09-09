@@ -1,6 +1,6 @@
 extends Node
 
-var val: int = 0
+var val: float = 0.0   # make it a float
 
 @onready var label: Label = $CanvasLayer/Label
 
@@ -12,8 +12,7 @@ func _ready() -> void:
 		print("✅ Label connected successfully")
 
 func add_coin() -> void:
-	val += 1
+	val += 0.5
 	if label:
-	
-		label.text = str(val)   # UI updates here
-	print("Coins:", val)        # Console updates here
+		label.text = str(val)
+	print("Coins:", val)

@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://cp8q5fj3di6kd"]
+[gd_scene load_steps=6 format=3 uid="uid://cp8q5fj3di6kd"]
 
 [ext_resource type="PackedScene" uid="uid://c6g18e2vqf0b7" path="res://Player/player.tscn" id="1_cpyrx"]
 [ext_resource type="Script" path="res://main.gd" id="1_yjt1p"]
 [ext_resource type="Texture2D" uid="uid://ddfnnbvcnijck" path="res://Background/Background1.png" id="2_00mfo"]
 [ext_resource type="PackedScene" uid="uid://cakim23owrjr3" path="res://global/score.tscn" id="4_dp014"]
+[ext_resource type="FontFile" uid="uid://b07xmv84cnmcm" path="res://fonts/m6x11.ttf" id="6_feds7"]
 
 [node name="main" type="Node2D"]
 script = ExtResource("1_yjt1p")
@@ -21,6 +22,56 @@ position_smoothing_speed = 10.0
 rotation_smoothing_enabled = true
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer8" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(-7, 1019)
+motion_mirroring = Vector2(1156.31, 0)
+
+[node name="Background1" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer8"]
+texture_filter = 1
+position = Vector2(570, 292)
+scale = Vector2(4.51754, 4.51754)
+texture = ExtResource("2_00mfo")
+
+[node name="ParallaxLayer7" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(-7, 862)
+motion_mirroring = Vector2(1156.31, 0)
+
+[node name="Background1" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer7"]
+texture_filter = 1
+position = Vector2(570, 292)
+scale = Vector2(4.51754, 4.51754)
+texture = ExtResource("2_00mfo")
+
+[node name="ParallaxLayer6" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(-7, 711)
+motion_mirroring = Vector2(1156.31, 0)
+
+[node name="Background1" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer6"]
+texture_filter = 1
+position = Vector2(570, 292)
+scale = Vector2(4.51754, 4.51754)
+texture = ExtResource("2_00mfo")
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(-7, 556)
+motion_mirroring = Vector2(1156.31, 0)
+
+[node name="Background1" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer5"]
+texture_filter = 1
+position = Vector2(570, 292)
+scale = Vector2(4.51754, 4.51754)
+texture = ExtResource("2_00mfo")
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(-7, 396)
+motion_mirroring = Vector2(1156.31, 0)
+
+[node name="Background1" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer4"]
+texture_filter = 1
+position = Vector2(570, 292)
+scale = Vector2(4.51754, 4.51754)
+texture = ExtResource("2_00mfo")
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 position = Vector2(-7, 396)
@@ -65,11 +116,18 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="CanvasLayer/Control"]
 texture_filter = 1
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -14.7
+anchor_top = 0.25
+anchor_right = -14.7
+anchor_bottom = 0.25
 offset_left = 1038.0
 offset_top = 8.0
 offset_right = 1078.0
 offset_bottom = 31.0
-scale = Vector2(2.64579, 2.03773)
-text = " "
+scale = Vector2(4.33881, 3.34165)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_feds7")
+text = " gg"
 metadata/_edit_use_anchors_ = true
