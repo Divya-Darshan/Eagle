@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://cp8q5fj3di6kd"]
+[gd_scene load_steps=8 format=3 uid="uid://cp8q5fj3di6kd"]
 
 [ext_resource type="PackedScene" uid="uid://c6g18e2vqf0b7" path="res://Player/player.tscn" id="1_cpyrx"]
 [ext_resource type="Script" path="res://main.gd" id="1_yjt1p"]
@@ -6,7 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://cakim23owrjr3" path="res://global/score.tscn" id="4_dp014"]
 [ext_resource type="Texture2D" uid="uid://3juh48n353m7" path="res://Background/Background5.png" id="4_t7o6i"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_q8jwq"]
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_37rnh"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_vsd5n"]
 
 [node name="main" type="Node2D"]
 script = ExtResource("1_yjt1p")
@@ -120,13 +122,14 @@ position = Vector2(5, 8)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/Area2D"]
 position = Vector2(567, 1235)
-scale = Vector2(65.4591, 0.473982)
-shape = SubResource("RectangleShape2D_q8jwq")
+scale = Vector2(9.11705, 0.77504)
+shape = SubResource("WorldBoundaryShape2D_37rnh")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="CanvasLayer/Area2D"]
 position = Vector2(619, -179)
-scale = Vector2(68.5699, 0.480831)
-shape = SubResource("RectangleShape2D_q8jwq")
+rotation = -3.11878
+scale = Vector2(1.97295, 0.59323)
+shape = SubResource("WorldBoundaryShape2D_vsd5n")
 
 [connection signal="finished" from="CharacterBody2D/dead" to="." method="_on_dead_finished"]
 [connection signal="body_entered" from="CanvasLayer/Area2D" to="." method="_on_area_2d_body_entered"]

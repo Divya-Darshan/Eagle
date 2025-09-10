@@ -10,6 +10,7 @@ size = Vector2(20.732, 18.9632)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qn1vm"]
 
 [node name="poll" type="Area2D"]
+scale = Vector2(1.3309, 1.3309)
 script = ExtResource("1_nl635")
 
 [node name="rect" type="ColorRect" parent="."]
@@ -172,8 +173,8 @@ scale = Vector2(2.65918, -61.3878)
 shape = SubResource("RectangleShape2D_1pac1")
 
 [node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
-position = Vector2(-21, -919)
-scale = Vector2(66.1889, 85.9932)
+position = Vector2(132, -319)
+scale = Vector2(0.53338, 14.1142)
 
 [node name="Area2D" type="Area2D" parent="."]
 

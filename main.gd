@@ -5,10 +5,10 @@ extends Node2D
 @onready var camera_2d: Camera2D = $CharacterBody2D/Camera2D
 const START_GAP_SIZE := 500       # initial vertical gap
 const MIN_GAP_SIZE := 400         # minimum gap (hardest difficulty)
-const PIPE_SPEED := -200.0        # move left speed
+const PIPE_SPEED := -100.0        # move left speed
 const SPAWN_INTERVAL := 2.0       # seconds between spawns
 const SPAWN_OFFSET_X := 600       # how far in front of camera pipes appear
-const MARGIN := 50                # margin so pipes never touch the screen edges
+const MARGIN := 500                # margin so pipes never touch the screen edges
 
 
 var spawn_timer: float = 0.0

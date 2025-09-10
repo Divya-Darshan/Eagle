@@ -11,7 +11,7 @@ script = ExtResource("1_t6u6p")
 
 [node name="sprite" type="Sprite2D" parent="CanvasLayer"]
 texture_filter = 1
-position = Vector2(400, 150)
+position = Vector2(330.269, 92.2687)
 scale = Vector2(-4.15859, -4.15859)
 texture = ExtResource("2_4sv75")
 region_enabled = true
@@ -20,10 +20,10 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="CanvasLayer"]
 texture_filter = 1
-offset_left = 454.0
-offset_top = 131.0
-offset_right = 494.0
-offset_bottom = 154.0
+offset_left = 384.269
+offset_top = 73.2687
+offset_right = 424.269
+offset_bottom = 96.2687
 scale = Vector2(4.36782, 3.364)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.423529)
 theme_override_fonts/font = ExtResource("3_3mt4a")
