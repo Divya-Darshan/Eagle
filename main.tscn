@@ -2,9 +2,9 @@
 
 [ext_resource type="PackedScene" uid="uid://c6g18e2vqf0b7" path="res://Player/player.tscn" id="1_cpyrx"]
 [ext_resource type="Script" path="res://main.gd" id="1_yjt1p"]
-[ext_resource type="Texture2D" uid="uid://ddfnnbvcnijck" path="res://Background/Background1.png" id="2_00mfo"]
 [ext_resource type="AudioStream" uid="uid://dkt4slhhtd3ge" path="res://sfx/dead_A01.mp3" id="3_yabrd"]
 [ext_resource type="PackedScene" uid="uid://cakim23owrjr3" path="res://global/score.tscn" id="4_dp014"]
+[ext_resource type="Texture2D" uid="uid://3juh48n353m7" path="res://Background/Background5.png" id="4_t7o6i"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q8jwq"]
 
@@ -39,7 +39,7 @@ motion_mirroring = Vector2(1156.31, 0)
 texture_filter = 1
 position = Vector2(570, 292)
 scale = Vector2(4.51754, 4.51754)
-texture = ExtResource("2_00mfo")
+texture = ExtResource("4_t7o6i")
 
 [node name="ParallaxLayer7" type="ParallaxLayer" parent="ParallaxBackground"]
 position = Vector2(-7, 862)
@@ -49,7 +49,7 @@ motion_mirroring = Vector2(1156.31, 0)
 texture_filter = 1
 position = Vector2(570, 292)
 scale = Vector2(4.51754, 4.51754)
-texture = ExtResource("2_00mfo")
+texture = ExtResource("4_t7o6i")
 
 [node name="ParallaxLayer6" type="ParallaxLayer" parent="ParallaxBackground"]
 position = Vector2(-7, 711)
@@ -59,7 +59,7 @@ motion_mirroring = Vector2(1156.31, 0)
 texture_filter = 1
 position = Vector2(570, 292)
 scale = Vector2(4.51754, 4.51754)
-texture = ExtResource("2_00mfo")
+texture = ExtResource("4_t7o6i")
 
 [node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground"]
 position = Vector2(-7, 556)
@@ -69,7 +69,7 @@ motion_mirroring = Vector2(1156.31, 0)
 texture_filter = 1
 position = Vector2(570, 292)
 scale = Vector2(4.51754, 4.51754)
-texture = ExtResource("2_00mfo")
+texture = ExtResource("4_t7o6i")
 
 [node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
 position = Vector2(-7, 396)
@@ -79,7 +79,7 @@ motion_mirroring = Vector2(1156.31, 0)
 texture_filter = 1
 position = Vector2(570, 292)
 scale = Vector2(4.51754, 4.51754)
-texture = ExtResource("2_00mfo")
+texture = ExtResource("4_t7o6i")
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 position = Vector2(-7, 396)
@@ -89,7 +89,7 @@ motion_mirroring = Vector2(1156.31, 0)
 texture_filter = 1
 position = Vector2(570, 97)
 scale = Vector2(4.51754, 4.51754)
-texture = ExtResource("2_00mfo")
+texture = ExtResource("4_t7o6i")
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
 position = Vector2(-7, 249)
@@ -99,7 +99,7 @@ motion_mirroring = Vector2(1156.31, 0)
 texture_filter = 1
 position = Vector2(570, 97)
 scale = Vector2(4.51754, 4.51754)
-texture = ExtResource("2_00mfo")
+texture = ExtResource("4_t7o6i")
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
 position = Vector2(-7, 94)
@@ -109,7 +109,7 @@ motion_mirroring = Vector2(1156.31, 0)
 texture_filter = 1
 position = Vector2(570, 97)
 scale = Vector2(4.51754, 4.51754)
-texture = ExtResource("2_00mfo")
+texture = ExtResource("4_t7o6i")
 
 [node name="Node" parent="." instance=ExtResource("4_dp014")]
 
