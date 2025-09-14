@@ -13,7 +13,7 @@ Tap or click to flap your wings, avoid the pipes, and aim for the highest score!
 
 ## 📥 Download
 
-👉 **[Download APK here](https://github.com/Divya-Darshan/Eagle/blob/main/app/eagle.apk)** 👈  
+👉 **[Download APK here](https://github.com/Divya-Darshan/Eagle/raw/refs/heads/main/app/eagle.apk)** 👈  
 
  
 
