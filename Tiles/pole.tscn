@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Tiles/pole.gd" id="1_nl635"]
 [ext_resource type="Texture2D" uid="uid://b07k3lrp011pa" path="res://Tiles/Style 1/PipeStyle1.png" id="1_unko7"]
-[ext_resource type="AudioStream" uid="uid://dkt4slhhtd3ge" path="res://sfx/dead_A01.mp3" id="3_pusm8"]
+[ext_resource type="AudioStream" uid="uid://pb16ovmclmar" path="res://sfx/ahhhh.mp3" id="3_fg4mt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1pac1"]
 size = Vector2(20.732, 18.9632)
@@ -185,7 +185,8 @@ shape = SubResource("RectangleShape2D_qn1vm")
 
 [node name="val" type="AudioStreamPlayer2D" parent="."]
 process_mode = 3
-stream = ExtResource("3_pusm8")
+stream = ExtResource("3_fg4mt")
+volume_db = 24.0
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenEnabler2D" to="." method="_on_visible_on_screen_enabler_2d_screen_exited"]

@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://c6g18e2vqf0b7" path="res://Player/player.tscn" id="1_cpyrx"]
 [ext_resource type="Script" path="res://main.gd" id="1_yjt1p"]
-[ext_resource type="AudioStream" uid="uid://dkt4slhhtd3ge" path="res://sfx/dead_A01.mp3" id="3_yabrd"]
+[ext_resource type="AudioStream" uid="uid://pb16ovmclmar" path="res://sfx/ahhhh.mp3" id="3_v1g7k"]
 [ext_resource type="PackedScene" uid="uid://cakim23owrjr3" path="res://global/score.tscn" id="4_dp014"]
 [ext_resource type="Texture2D" uid="uid://3juh48n353m7" path="res://Background/Background5.png" id="4_t7o6i"]
 
@@ -15,7 +15,7 @@ script = ExtResource("1_yjt1p")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_cpyrx")]
 position = Vector2(595, 305)
-scale = Vector2(4.91812, 4.91812)
+scale = Vector2(6.78498, 6.78498)
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 position = Vector2(-4.06659, 3.65993)
@@ -29,7 +29,7 @@ rotation_smoothing_enabled = true
 process_mode = 3
 position = Vector2(-120.981, -62.0156)
 scale = Vector2(0.20333, 0.20333)
-stream = ExtResource("3_yabrd")
+stream = ExtResource("3_v1g7k")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
