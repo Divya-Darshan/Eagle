@@ -48,9 +48,4 @@ Tap or click to flap your wings, avoid the pipes, and aim for the highest score!
 
 ---
 
-## 🙌 Credits
-Developed by **[Divya-Darshan](https://github.com/divya-darshan)**
-
----
-
 ⭐ If you like the project, don’t forget to star the repo!
