@@ -1,7 +1,8 @@
-[gd_scene load_steps=17 format=3 uid="uid://cp8q5fj3di6kd"]
+[gd_scene load_steps=18 format=3 uid="uid://cp8q5fj3di6kd"]
 
 [ext_resource type="PackedScene" uid="uid://c6g18e2vqf0b7" path="res://Player/player.tscn" id="1_cpyrx"]
 [ext_resource type="Script" path="res://main.gd" id="1_yjt1p"]
+[ext_resource type="Script" path="res://sender.gd" id="2_w3dpg"]
 [ext_resource type="AudioStream" uid="uid://pb16ovmclmar" path="res://sfx/ahhhh.mp3" id="3_v1g7k"]
 [ext_resource type="PackedScene" uid="uid://cakim23owrjr3" path="res://global/score.tscn" id="4_dp014"]
 [ext_resource type="PackedScene" uid="uid://qi2jd0rmpg7s" path="res://Background/parallax_background.tscn" id="4_sycqg"]
@@ -33,6 +34,15 @@ region = Rect2(160, 96, 32, 32)
 
 [node name="main" type="Node2D"]
 script = ExtResource("1_yjt1p")
+
+[node name="sender" type="Node" parent="."]
+script = ExtResource("2_w3dpg")
+
+[node name="Label" type="Label" parent="sender"]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="HTTPRequest" type="HTTPRequest" parent="sender"]
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_cpyrx")]
 position = Vector2(80, 112)
