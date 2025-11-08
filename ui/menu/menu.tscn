@@ -1,9 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://b7vosdhj0i52n"]
+[gd_scene load_steps=14 format=3 uid="uid://b7vosdhj0i52n"]
 
 [ext_resource type="Script" path="res://ui/menu/menu.gd" id="1_5uj2i"]
 [ext_resource type="Texture2D" uid="uid://bu785e03h8xx" path="res://icon/Metal Buttons Icons.png" id="2_0fc3w"]
 [ext_resource type="FontFile" uid="uid://b07xmv84cnmcm" path="res://fonts/m6x11.ttf" id="3_iiwfg"]
 [ext_resource type="Texture2D" uid="uid://0asph0ldn3st" path="res://icon/github.png" id="4_nnyul"]
+[ext_resource type="PackedScene" uid="uid://6hkxahqm8o68" path="res://user/username.tscn" id="5_n3nrh"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_u6nv8"]
 atlas = ExtResource("2_0fc3w")
@@ -44,11 +45,11 @@ script = ExtResource("1_5uj2i")
 process_mode = 3
 visible = false
 self_modulate = Color(0, 0, 0, 0.529412)
-offset_left = -16.0
-offset_top = -8.0
-offset_right = 24.0
-offset_bottom = 32.0
-scale = Vector2(13.1042, 26.621)
+offset_left = -88.0
+offset_top = -72.0
+offset_right = -48.0
+offset_bottom = -32.0
+scale = Vector2(17.9435, 36.3432)
 
 [node name="open" type="TouchScreenButton" parent="."]
 process_mode = 3
@@ -60,6 +61,7 @@ passby_press = true
 
 [node name="close" type="TouchScreenButton" parent="."]
 process_mode = 3
+visible = false
 position = Vector2(400, 16)
 scale = Vector2(2.349, 2.349)
 texture_normal = SubResource("AtlasTexture_r0u7i")
@@ -67,7 +69,7 @@ texture_pressed = SubResource("AtlasTexture_0pj3s")
 
 [node name="reset" type="TouchScreenButton" parent="close"]
 process_mode = 3
-position = Vector2(-143.04, 51.0856)
+position = Vector2(-146.445, 47.6799)
 scale = Vector2(2.199, 2.199)
 texture_normal = SubResource("AtlasTexture_hfvcl")
 texture_pressed = SubResource("AtlasTexture_fm3el")
@@ -85,7 +87,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="resume" type="TouchScreenButton" parent="close"]
 process_mode = 3
-position = Vector2(-143.04, 126.011)
+position = Vector2(-146.445, 122.605)
 scale = Vector2(2.199, 2.199)
 texture_normal = SubResource("AtlasTexture_t8i6k")
 texture_pressed = SubResource("AtlasTexture_ly41m")
@@ -105,12 +107,12 @@ position = Vector2(-3.4057, -183.057)
 scale = Vector2(1.61052, 1.61052)
 
 [node name="ColorRect" type="ColorRect" parent="close/foot"]
-offset_left = -108.641
-offset_top = 311.913
-offset_right = -68.6408
-offset_bottom = 351.913
-scale = Vector2(3.51868, 1.63329)
-color = Color(0.164706, 0.164706, 0.164706, 0.705882)
+offset_left = -135.338
+offset_top = 308.212
+offset_right = -95.3384
+offset_bottom = 348.212
+scale = Vector2(5.21438, 4.20158)
+color = Color(0.114897, 0.114897, 0.114897, 0.811765)
 
 [node name="Github" type="Sprite2D" parent="close/foot"]
 self_modulate = Color(1, 1, 1, 0.34902)
@@ -164,8 +166,12 @@ text = "Press Me
     ⬇️"
 justification_flags = 0
 
+[node name="username" parent="close" instance=ExtResource("5_n3nrh")]
+position = Vector2(-170.285, 40.8685)
+scale = Vector2(0.379248, 0.379248)
+
 [connection signal="pressed" from="open" to="." method="_on_open_pressed"]
 [connection signal="pressed" from="close" to="." method="_on_close_pressed"]
 [connection signal="pressed" from="close/reset" to="." method="_on_reset_pressed"]
-[connection signal="pressed" from="close/resume" to="." method="_on_reset_pressed"]
+[connection signal="pressed" from="close/resume" to="." method="_on_resume_pressed"]
 [connection signal="pressed" from="close/foot/TouchScreenButton" to="." method="_on_touch_screen_button_pressed"]

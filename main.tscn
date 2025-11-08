@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://cp8q5fj3di6kd"]
+[gd_scene load_steps=17 format=3 uid="uid://cp8q5fj3di6kd"]
 
 [ext_resource type="PackedScene" uid="uid://c6g18e2vqf0b7" path="res://Player/player.tscn" id="1_cpyrx"]
 [ext_resource type="Script" path="res://main.gd" id="1_yjt1p"]
@@ -7,16 +7,35 @@
 [ext_resource type="PackedScene" uid="uid://qi2jd0rmpg7s" path="res://Background/parallax_background.tscn" id="4_sycqg"]
 [ext_resource type="Script" path="res://sfx/worldborder.gd" id="5_e4eth"]
 [ext_resource type="PackedScene" uid="uid://b7vosdhj0i52n" path="res://ui/menu/menu.tscn" id="7_6ypv4"]
+[ext_resource type="Texture2D" uid="uid://bu785e03h8xx" path="res://icon/Metal Buttons Icons.png" id="8_r1fmb"]
+[ext_resource type="FontFile" uid="uid://b07xmv84cnmcm" path="res://fonts/m6x11.ttf" id="9_sc5u2"]
+[ext_resource type="Script" path="res://ui/menu/label.gd" id="10_h4frg"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_37rnh"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_vsd5n"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_ghfoy"]
+atlas = ExtResource("8_r1fmb")
+region = Rect2(32, 256, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_52hbn"]
+atlas = ExtResource("8_r1fmb")
+region = Rect2(64, 256, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oe6v4"]
+atlas = ExtResource("8_r1fmb")
+region = Rect2(96, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kffll"]
+atlas = ExtResource("8_r1fmb")
+region = Rect2(160, 96, 32, 32)
+
 [node name="main" type="Node2D"]
 script = ExtResource("1_yjt1p")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_cpyrx")]
-position = Vector2(595, 305)
+position = Vector2(80, 112)
 scale = Vector2(6.78498, 6.78498)
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
@@ -52,9 +71,55 @@ shape = SubResource("WorldBoundaryShape2D_vsd5n")
 process_mode = 3
 position = Vector2(45, 3)
 stream = ExtResource("3_v1g7k")
-volume_db = 24.0
+volume_db = -80.0
 
 [node name="menu" parent="." instance=ExtResource("7_6ypv4")]
 
+[node name="startup" type="Node2D" parent="."]
+process_mode = 3
+position = Vector2(689, 24)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="startup"]
+
+[node name="about" type="TouchScreenButton" parent="startup/CanvasLayer"]
+process_mode = 3
+position = Vector2(176, 584)
+scale = Vector2(5, 5)
+texture_normal = SubResource("AtlasTexture_ghfoy")
+texture_pressed = SubResource("AtlasTexture_52hbn")
+
+[node name="Label" type="Label" parent="startup/CanvasLayer/about"]
+process_mode = 3
+offset_left = 3.2
+offset_top = 33.6
+offset_right = 38.2
+offset_bottom = 47.6
+scale = Vector2(0.723735, 0.723735)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.537255)
+theme_override_fonts/font = ExtResource("9_sc5u2")
+text = "About"
+script = ExtResource("10_h4frg")
+metadata/_edit_use_anchors_ = true
+
+[node name="start" type="TouchScreenButton" parent="startup/CanvasLayer"]
+process_mode = 3
+position = Vector2(176, 336)
+scale = Vector2(5, 5)
+texture_normal = SubResource("AtlasTexture_oe6v4")
+texture_pressed = SubResource("AtlasTexture_kffll")
+
+[node name="Label" type="Label" parent="startup/CanvasLayer/start"]
+process_mode = 3
+offset_left = 3.2
+offset_top = 33.6
+offset_right = 38.2
+offset_bottom = 47.6
+scale = Vector2(0.723735, 0.723735)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.537255)
+theme_override_fonts/font = ExtResource("9_sc5u2")
+text = "Start"
+script = ExtResource("10_h4frg")
+
 [connection signal="area_entered" from="CanvasLayer/Area2D" to="CanvasLayer/Area2D" method="_on_area_entered"]
 [connection signal="body_entered" from="CanvasLayer/Area2D" to="CanvasLayer/Area2D" method="_on_body_entered"]
+[connection signal="pressed" from="startup/CanvasLayer/start" to="." method="_on_start_pressed"]

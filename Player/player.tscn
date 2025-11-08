@@ -38,4 +38,4 @@ shape = SubResource("CircleShape2D_hgm8q")
 [node name="val" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(0.00702408, 1.68362)
 stream = ExtResource("3_ggbhd")
-volume_db = 24.0
+volume_db = -80.0

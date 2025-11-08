@@ -1,5 +1,6 @@
 extends Node2D
 
+@onready var startup: Node2D = $startup
 @onready var dead: AudioStreamPlayer2D = $CharacterBody2D/dead
 @onready var pole_scene := preload("res://Tiles/pole.tscn")
 @onready var camera_2d: Camera2D = $CharacterBody2D/Camera2D
@@ -9,6 +10,10 @@ const PIPE_SPEED := -100.0        # move left speed
 const SPAWN_INTERVAL := 2.0       # seconds between spawns
 const SPAWN_OFFSET_X := 650       # how far in front of camera pipes appear
 const MARGIN := 500                # margin so pipes never touch the screen edges
+
+@onready var st: Label = $startup/CanvasLayer/start/Label
+@onready var ab: Label = $startup/CanvasLayer/about/Label
+
 
 var spawn_timer: float = 0.0
 var time_elapsed: float = 0.0
@@ -52,3 +57,12 @@ func spawn_pipe_pair() -> void:
 	add_child(bottom_pipe)
 	bottom_pipe.global_position = Vector2(spawn_x, gap_center_y + gap_size / 2)
 	bottom_pipe.set("velocity", Vector2(PIPE_SPEED, 0))
+
+func _ready() -> void:
+	get_tree().paused = true
+	$menu/open.visible = false
+
+func _on_start_pressed() -> void:
+	$menu/open.visible = true
+	get_tree().paused = false
+	startup.queue_free()

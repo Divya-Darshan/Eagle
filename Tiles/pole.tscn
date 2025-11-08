@@ -176,7 +176,7 @@ shape = SubResource("RectangleShape2D_qn1vm")
 [node name="val" type="AudioStreamPlayer2D" parent="."]
 process_mode = 3
 stream = ExtResource("3_fg4mt")
-volume_db = 24.0
+volume_db = -80.0
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenEnabler2D" to="." method="_on_visible_on_screen_enabler_2d_screen_exited"]
