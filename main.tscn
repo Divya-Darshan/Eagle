@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cp8q5fj3di6kd"]
+[gd_scene load_steps=10 format=3 uid="uid://cp8q5fj3di6kd"]
 
 [ext_resource type="PackedScene" uid="uid://c6g18e2vqf0b7" path="res://Player/player.tscn" id="1_cpyrx"]
 [ext_resource type="Script" path="res://main.gd" id="1_yjt1p"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cakim23owrjr3" path="res://global/score.tscn" id="4_dp014"]
 [ext_resource type="PackedScene" uid="uid://qi2jd0rmpg7s" path="res://Background/parallax_background.tscn" id="4_sycqg"]
 [ext_resource type="Script" path="res://sfx/worldborder.gd" id="5_e4eth"]
+[ext_resource type="PackedScene" uid="uid://b7vosdhj0i52n" path="res://ui/menu/menu.tscn" id="7_6ypv4"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_37rnh"]
 
@@ -53,6 +54,8 @@ process_mode = 3
 position = Vector2(45, 3)
 stream = ExtResource("3_v1g7k")
 volume_db = 24.0
+
+[node name="menu" parent="." instance=ExtResource("7_6ypv4")]
 
 [connection signal="area_entered" from="CanvasLayer/Area2D" to="CanvasLayer/Area2D" method="_on_area_entered"]
 [connection signal="body_entered" from="CanvasLayer/Area2D" to="CanvasLayer/Area2D" method="_on_body_entered"]

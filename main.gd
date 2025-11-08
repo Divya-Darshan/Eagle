@@ -7,7 +7,7 @@ const START_GAP_SIZE := 500       # initial vertical gap
 const MIN_GAP_SIZE := 500         # minimum gap (hardest difficulty)
 const PIPE_SPEED := -100.0        # move left speed
 const SPAWN_INTERVAL := 2.0       # seconds between spawns
-const SPAWN_OFFSET_X := 600       # how far in front of camera pipes appear
+const SPAWN_OFFSET_X := 650       # how far in front of camera pipes appear
 const MARGIN := 500                # margin so pipes never touch the screen edges
 
 var spawn_timer: float = 0.0
@@ -19,6 +19,8 @@ func _process(delta: float) -> void:
 	if spawn_timer <= 0.0:
 		spawn_pipe_pair()
 		spawn_timer = SPAWN_INTERVAL
+		
+
 
 
 func spawn_pipe_pair() -> void:

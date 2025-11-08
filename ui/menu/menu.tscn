@@ -1,0 +1,78 @@
+[gd_scene load_steps=10 format=3 uid="uid://b7vosdhj0i52n"]
+
+[ext_resource type="Script" path="res://ui/menu/menu.gd" id="1_5uj2i"]
+[ext_resource type="Texture2D" uid="uid://bu785e03h8xx" path="res://icon/Metal Buttons Icons.png" id="2_0fc3w"]
+[ext_resource type="FontFile" uid="uid://b07xmv84cnmcm" path="res://fonts/m6x11.ttf" id="3_iiwfg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u6nv8"]
+atlas = ExtResource("2_0fc3w")
+region = Rect2(288, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q06x7"]
+atlas = ExtResource("2_0fc3w")
+region = Rect2(352, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r0u7i"]
+atlas = ExtResource("2_0fc3w")
+region = Rect2(192, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0pj3s"]
+atlas = ExtResource("2_0fc3w")
+region = Rect2(256, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hfvcl"]
+atlas = ExtResource("2_0fc3w")
+region = Rect2(96, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fm3el"]
+atlas = ExtResource("2_0fc3w")
+region = Rect2(160, 32, 32, 32)
+
+[node name="menu" type="CanvasLayer"]
+script = ExtResource("1_5uj2i")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+process_mode = 3
+visible = false
+self_modulate = Color(0, 0, 0, 0.529412)
+offset_left = -16.0
+offset_top = -8.0
+offset_right = 24.0
+offset_bottom = 32.0
+scale = Vector2(13.1042, 26.621)
+
+[node name="open" type="TouchScreenButton" parent="."]
+process_mode = 3
+position = Vector2(400, 16)
+scale = Vector2(2.34907, 2.34907)
+texture_normal = SubResource("AtlasTexture_u6nv8")
+texture_pressed = SubResource("AtlasTexture_q06x7")
+passby_press = true
+
+[node name="close" type="TouchScreenButton" parent="."]
+process_mode = 3
+visible = false
+position = Vector2(400, 16)
+scale = Vector2(2.349, 2.349)
+texture_normal = SubResource("AtlasTexture_r0u7i")
+texture_pressed = SubResource("AtlasTexture_0pj3s")
+
+[node name="reset" type="TouchScreenButton" parent="close"]
+process_mode = 3
+position = Vector2(-143.04, 47.6799)
+texture_normal = SubResource("AtlasTexture_hfvcl")
+texture_pressed = SubResource("AtlasTexture_fm3el")
+
+[node name="Label" type="Label" parent="close/reset"]
+offset_left = -10.2171
+offset_top = -10.2171
+offset_right = 64.7829
+offset_bottom = 12.7829
+scale = Vector2(0.723735, 0.723735)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.537255)
+theme_override_fonts/font = ExtResource("3_iiwfg")
+text = "Reset score"
+
+[connection signal="pressed" from="open" to="." method="_on_open_pressed"]
+[connection signal="pressed" from="close" to="." method="_on_close_pressed"]
+[connection signal="pressed" from="close/reset" to="." method="_on_reset_pressed"]

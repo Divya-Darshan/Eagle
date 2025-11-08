@@ -5,11 +5,14 @@
 [ext_resource type="FontFile" uid="uid://b07xmv84cnmcm" path="res://fonts/m6x11.ttf" id="3_3mt4a"]
 
 [node name="coin" type="Node"]
+process_mode = 3
 script = ExtResource("1_t6u6p")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+process_mode = 3
 
 [node name="sprite" type="Sprite2D" parent="CanvasLayer"]
+process_mode = 3
 self_modulate = Color(0.561588, 0.561589, 0, 0.329412)
 texture_filter = 1
 position = Vector2(39.4374, 48)
@@ -20,17 +23,20 @@ region_enabled = true
 region_rect = Rect2(0, 0, 16, 16)
 metadata/_edit_use_anchors_ = true
 
-[node name="sprite2" type="Sprite2D" parent="CanvasLayer"]
+[node name="sprite2" type="Sprite2D" parent="CanvasLayer/sprite"]
+process_mode = 3
 texture_filter = 1
-position = Vector2(39.4374, 48)
-rotation = -3.14159
-scale = Vector2(2.23219, 2.23219)
+scale = Vector2(0.873768, 0.873768)
 texture = ExtResource("2_4sv75")
 region_enabled = true
 region_rect = Rect2(0, 0, 16, 16)
 metadata/_edit_use_anchors_ = true
 
-[node name="Label" type="Label" parent="CanvasLayer"]
+[node name="Label" type="Label" parent="CanvasLayer/sprite"]
+process_mode = 3
+show_behind_parent = true
+top_level = true
+clip_children = 2
 texture_filter = 1
 offset_left = 67.4313
 offset_top = 38.0
@@ -38,5 +44,10 @@ offset_right = 107.431
 offset_bottom = 61.0
 scale = Vector2(2.33304, 1.79686)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.423529)
+theme_override_constants/shadow_offset_x = 0
 theme_override_fonts/font = ExtResource("3_3mt4a")
+text = "1"
+clip_text = true
+text_overrun_behavior = 1
+uppercase = true
 metadata/_edit_use_anchors_ = true
