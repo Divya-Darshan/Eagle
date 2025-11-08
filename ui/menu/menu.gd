@@ -1,8 +1,10 @@
 extends CanvasLayer
 
+
 @onready var color_rect: ColorRect = $ColorRect
 @onready var open: TouchScreenButton = $open
 @onready var close: TouchScreenButton = $close
+@onready var coin: Node = $"../coin"
 
 func _on_open_pressed() -> void:
 	color_rect.visible = true
@@ -18,4 +20,8 @@ func _on_close_pressed() -> void:
 
 
 func _on_reset_pressed() -> void:
-	pass # Replace with function body.
+	coin.reset_coins()
+
+
+func _on_touch_screen_button_pressed() -> void:
+	OS.shell_open("https://github.com/Divya-Darshan/eagle")

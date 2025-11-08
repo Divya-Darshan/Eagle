@@ -2,17 +2,13 @@ extends Node
 
 var val: float = 0.0
 @onready var label: Label = $CanvasLayer/sprite/Label
-const SAVE_PATH := "user://coins.save"
+const SAVE_PATH := "user://coins.save  "
 @onready var color_rect: ColorRect = $CanvasLayer/ColorRect
 @onready var close: TouchScreenButton = $CanvasLayer/close
 
 
 
-func _process(delta):
-	var reset_btn = $"../menu/close/reset"
 
-	if reset_btn and reset_btn.is_pressed():
-		reset_coins()
 
 
 func _ready():

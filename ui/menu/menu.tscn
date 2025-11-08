@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://b7vosdhj0i52n"]
+[gd_scene load_steps=13 format=3 uid="uid://b7vosdhj0i52n"]
 
 [ext_resource type="Script" path="res://ui/menu/menu.gd" id="1_5uj2i"]
 [ext_resource type="Texture2D" uid="uid://bu785e03h8xx" path="res://icon/Metal Buttons Icons.png" id="2_0fc3w"]
 [ext_resource type="FontFile" uid="uid://b07xmv84cnmcm" path="res://fonts/m6x11.ttf" id="3_iiwfg"]
+[ext_resource type="Texture2D" uid="uid://0asph0ldn3st" path="res://icon/github.png" id="4_nnyul"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_u6nv8"]
 atlas = ExtResource("2_0fc3w")
@@ -28,6 +29,14 @@ region = Rect2(96, 32, 32, 32)
 atlas = ExtResource("2_0fc3w")
 region = Rect2(160, 32, 32, 32)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_t8i6k"]
+atlas = ExtResource("2_0fc3w")
+region = Rect2(96, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ly41m"]
+atlas = ExtResource("2_0fc3w")
+region = Rect2(160, 96, 32, 32)
+
 [node name="menu" type="CanvasLayer"]
 script = ExtResource("1_5uj2i")
 
@@ -51,7 +60,6 @@ passby_press = true
 
 [node name="close" type="TouchScreenButton" parent="."]
 process_mode = 3
-visible = false
 position = Vector2(400, 16)
 scale = Vector2(2.349, 2.349)
 texture_normal = SubResource("AtlasTexture_r0u7i")
@@ -59,20 +67,105 @@ texture_pressed = SubResource("AtlasTexture_0pj3s")
 
 [node name="reset" type="TouchScreenButton" parent="close"]
 process_mode = 3
-position = Vector2(-143.04, 47.6799)
+position = Vector2(-143.04, 51.0856)
+scale = Vector2(2.199, 2.199)
 texture_normal = SubResource("AtlasTexture_hfvcl")
 texture_pressed = SubResource("AtlasTexture_fm3el")
 
 [node name="Label" type="Label" parent="close/reset"]
-offset_left = -10.2171
-offset_top = -10.2171
-offset_right = 64.7829
-offset_bottom = 12.7829
+offset_left = 35.9465
+offset_top = 10.9402
+offset_right = 84.9465
+offset_bottom = 24.9402
 scale = Vector2(0.723735, 0.723735)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.537255)
 theme_override_fonts/font = ExtResource("3_iiwfg")
-text = "Reset score"
+text = "Restart"
+metadata/_edit_use_anchors_ = true
+
+[node name="resume" type="TouchScreenButton" parent="close"]
+process_mode = 3
+position = Vector2(-143.04, 126.011)
+scale = Vector2(2.199, 2.199)
+texture_normal = SubResource("AtlasTexture_t8i6k")
+texture_pressed = SubResource("AtlasTexture_ly41m")
+
+[node name="Label" type="Label" parent="close/resume"]
+offset_left = 37.5093
+offset_top = 10.9402
+offset_right = 81.5093
+offset_bottom = 24.9402
+scale = Vector2(0.723735, 0.723735)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.537255)
+theme_override_fonts/font = ExtResource("3_iiwfg")
+text = "Resume"
+
+[node name="foot" type="Node2D" parent="close"]
+position = Vector2(-3.4057, -183.057)
+scale = Vector2(1.61052, 1.61052)
+
+[node name="ColorRect" type="ColorRect" parent="close/foot"]
+offset_left = -108.641
+offset_top = 311.913
+offset_right = -68.6408
+offset_bottom = 351.913
+scale = Vector2(3.51868, 1.63329)
+color = Color(0.164706, 0.164706, 0.164706, 0.705882)
+
+[node name="Github" type="Sprite2D" parent="close/foot"]
+self_modulate = Color(1, 1, 1, 0.34902)
+texture_filter = 1
+position = Vector2(-85.5829, 347.548)
+scale = Vector2(0.95674, 0.95674)
+texture = ExtResource("4_nnyul")
+
+[node name="Github3" type="Sprite2D" parent="close/foot"]
+self_modulate = Color(1, 1, 1, 0.215686)
+texture_filter = 1
+position = Vector2(-86.4343, 346.696)
+scale = Vector2(0.981026, 0.981026)
+texture = ExtResource("4_nnyul")
+
+[node name="Github2" type="Sprite2D" parent="close/foot"]
+texture_filter = 1
+position = Vector2(-87.2299, 345.483)
+scale = Vector2(0.890669, 0.890669)
+texture = ExtResource("4_nnyul")
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="close/foot"]
+position = Vector2(-101.504, 331.845)
+scale = Vector2(0.934, 0.934)
+texture_normal = ExtResource("4_nnyul")
+
+[node name="Label2" type="Label" parent="close/foot"]
+clip_contents = true
+offset_left = -66.8762
+offset_top = 337.817
+offset_right = 181.124
+offset_bottom = 385.817
+scale = Vector2(0.360683, 0.360683)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.537255)
+theme_override_fonts/font = ExtResource("3_iiwfg")
+text = "Find this project on
+my GitHub page 
+https://github.com/Divya-Darshan/eagle"
+justification_flags = 0
+
+[node name="Label3" type="Label" parent="close/foot"]
+clip_contents = true
+offset_left = -95.1598
+offset_top = 316.671
+offset_right = -39.1598
+offset_bottom = 356.671
+scale = Vector2(0.400957, 0.400957)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.537255)
+theme_override_fonts/font = ExtResource("3_iiwfg")
+text = "Press Me
+    ⬇️"
+justification_flags = 0
 
 [connection signal="pressed" from="open" to="." method="_on_open_pressed"]
 [connection signal="pressed" from="close" to="." method="_on_close_pressed"]
 [connection signal="pressed" from="close/reset" to="." method="_on_reset_pressed"]
+[connection signal="pressed" from="close/resume" to="." method="_on_reset_pressed"]
+[connection signal="pressed" from="close/foot/TouchScreenButton" to="." method="_on_touch_screen_button_pressed"]

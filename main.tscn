@@ -28,7 +28,6 @@ position_smoothing_speed = 10.0
 rotation_smoothing_enabled = true
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("4_sycqg")]
-visible = false
 
 [node name="coin" parent="." instance=ExtResource("4_dp014")]
 
