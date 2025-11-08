@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://iilw6k8vg778" path="res://icon/coin_small.png" id="2_4sv75"]
 [ext_resource type="FontFile" uid="uid://b07xmv84cnmcm" path="res://fonts/m6x11.ttf" id="3_3mt4a"]
 
-[node name="Node" type="Node"]
+[node name="coin" type="Node"]
 script = ExtResource("1_t6u6p")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]

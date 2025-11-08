@@ -4,27 +4,18 @@ extends Node2D
 @onready var pole_scene := preload("res://Tiles/pole.tscn")
 @onready var camera_2d: Camera2D = $CharacterBody2D/Camera2D
 const START_GAP_SIZE := 500       # initial vertical gap
-const MIN_GAP_SIZE := 400         # minimum gap (hardest difficulty)
+const MIN_GAP_SIZE := 500         # minimum gap (hardest difficulty)
 const PIPE_SPEED := -100.0        # move left speed
 const SPAWN_INTERVAL := 2.0       # seconds between spawns
 const SPAWN_OFFSET_X := 600       # how far in front of camera pipes appear
 const MARGIN := 500                # margin so pipes never touch the screen edges
 
-
 var spawn_timer: float = 0.0
 var time_elapsed: float = 0.0
-
-
-
-
-
 
 func _process(delta: float) -> void:
 	spawn_timer -= delta
 	time_elapsed += delta
-	
-
-	
 	if spawn_timer <= 0.0:
 		spawn_pipe_pair()
 		spawn_timer = SPAWN_INTERVAL
@@ -59,13 +50,3 @@ func spawn_pipe_pair() -> void:
 	add_child(bottom_pipe)
 	bottom_pipe.global_position = Vector2(spawn_x, gap_center_y + gap_size / 2)
 	bottom_pipe.set("velocity", Vector2(PIPE_SPEED, 0))
-
-
-func _on_area_2d_body_entered(body: Node2D) -> void:
-	get_tree().paused = true
-	dead.play()
-
-func _on_dead_finished() -> void:
-	await get_tree().create_timer(0.5).timeout
-	get_tree().paused = false
-	get_tree().reload_current_scene()

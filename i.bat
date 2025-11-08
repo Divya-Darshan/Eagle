@@ -1,6 +1,6 @@
 @echo off
 set APK_PATH= .\app\eagle.apk
-set PACKAGE_NAME= com.darshni.game
+set PACKAGE_NAME= com.eagle.darshni
 
 adb install -r %APK_PATH%
 if %ERRORLEVEL% EQU 0 (

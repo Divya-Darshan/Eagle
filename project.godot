@@ -10,12 +10,13 @@ config_version=5
 
 [application]
 
-config/name="BirthDay Kai 🥰"
+config/name="Eagle"
 run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
 boot_splash/bg_color=Color(0, 0, 0, 1)
 boot_splash/image="res://icon/in.png"
-config/icon="res://Player/kai.png"
+boot_splash/fullsize=false
+config/icon="res://Player/bird.png"
 
 [autoload]
 

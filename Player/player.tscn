@@ -1,18 +1,14 @@
-[gd_scene load_steps=7 format=3 uid="uid://c6g18e2vqf0b7"]
+[gd_scene load_steps=6 format=3 uid="uid://c6g18e2vqf0b7"]
 
 [ext_resource type="Script" path="res://gd/player.gd" id="1_jnjht"]
-[ext_resource type="Texture2D" uid="uid://jv8mkviqnb74" path="res://Player/kai.png" id="2_jdq3x"]
+[ext_resource type="Texture2D" uid="uid://ddyqvhneqjii3" path="res://Player/bird.png" id="3_0ay00"]
 [ext_resource type="AudioStream" uid="uid://bkv8sy1rcil8u" path="res://sfx/yamete.mp3" id="3_ggbhd"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_wspp1"]
-atlas = ExtResource("2_jdq3x")
-region = Rect2(0, 0, 205, 311)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_0xfyy"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_wspp1")
+"texture": ExtResource("3_0ay00")
 }],
 "loop": true,
 "name": &"default",
@@ -23,21 +19,23 @@ animations = [{
 radius = 7.0
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
-scale = Vector2(2.8966, 2.8966)
+scale = Vector2(4.00704, 4.00704)
 script = ExtResource("1_jnjht")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(1, 0)
-scale = Vector2(0.0604329, 0.0604329)
+position = Vector2(0.352256, -0.733002)
+scale = Vector2(0.0245587, 0.0241174)
 sprite_frames = SubResource("SpriteFrames_0xfyy")
+autoplay = "default"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1.09631e-09, -2.69793)
+position = Vector2(0.352256, -0.733002)
 rotation = -1.54877
-scale = Vector2(0.575625, 0.392856)
+scale = Vector2(0.549511, 0.374022)
 shape = SubResource("CircleShape2D_hgm8q")
 
 [node name="val" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(0.00702408, 1.68362)
 stream = ExtResource("3_ggbhd")
 volume_db = 24.0
