@@ -15,7 +15,7 @@ func _ready() -> void:
 	await get_tree().create_timer(3).timeout
 	send_to_server(username, coins)
 
-# -------------------------------------------------------
+
 # ✅ Load username + coins (fixed coins loading)
 # -------------------------------------------------------
 func load_data() -> void:
