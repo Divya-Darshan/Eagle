@@ -10,7 +10,6 @@ const SAVE_PATH := "user://coins.save"
 
 
 
-
 func _ready():
 
 	load_data()

@@ -5,15 +5,33 @@ extends Node
 var username: String = ""
 var coins: float = 0.0
 
+
 func _ready() -> void:
 	load_data()
+
 	if http:
 		http.request_completed.connect(_on_request_completed)
 	else:
 		push_error("❌ ERROR: HTTPRequest node not found!")
 		return
-	await get_tree().create_timer(3).timeout
+
+	# ✅ Start repeating timer (every 5 seconds)
+	var timer := Timer.new()
+	timer.wait_time = 5.0
+	timer.autostart = true
+	timer.one_shot = false
+	add_child(timer)
+	timer.timeout.connect(_on_send_timer)
+
+	print("✅ Auto sending every 5 seconds started!")
+
+
+# ✅ Called every 5 seconds
+func _on_send_timer() -> void:
+	load_data()  # update latest score from file
 	send_to_server(username, coins)
+
+
 
 
 # ✅ Load username + coins (fixed coins loading)
@@ -46,21 +64,22 @@ func load_data() -> void:
 # -------------------------------------------------------
 func send_to_server(username: String, score: float) -> void:
 
-	var data := {
-		"username": username,
-		"score": score,
-	}
-	var json_body := JSON.stringify(data)
-	var err := http.request(
-		"https://eagle-score.onrender.com/submit_score",
-		["Content-Type: application/json"],
-		HTTPClient.METHOD_POST,
-		json_body
-	)
-	if err != OK:
-		print("❌ HTTP Request Error:", err)
-	else:
-		print("📡 Sending to server:", json_body)
+		var data := {
+			"username": username,
+			"score": score,
+		}
+		var json_body := JSON.stringify(data)
+		var err := http.request(
+			"https://eagle-score.onrender.com/submit_score",
+			["Content-Type: application/json"],
+			HTTPClient.METHOD_POST,
+			json_body
+		)
+		if err != OK:
+			print("❌ HTTP Request Error:", err)
+		else:
+			print("📡 Sending to server:", json_body)
+
 
 # -------------------------------------------------------
 # ✅ Server Response

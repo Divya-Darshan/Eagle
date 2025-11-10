@@ -4,12 +4,14 @@ extends Node2D
 @onready var dead: AudioStreamPlayer2D = $CharacterBody2D/dead
 @onready var pole_scene := preload("res://Tiles/pole.tscn")
 @onready var camera_2d: Camera2D = $CharacterBody2D/Camera2D
-const START_GAP_SIZE := 500       # initial vertical gap
-const MIN_GAP_SIZE := 500         # minimum gap (hardest difficulty)
+const START_GAP_SIZE := 460       # initial vertical gap
+const MIN_GAP_SIZE := 600         # minimum gap (hardest difficulty)
 const PIPE_SPEED := -100.0        # move left speed
-const SPAWN_INTERVAL := 2.0       # seconds between spawns
-const SPAWN_OFFSET_X := 650       # how far in front of camera pipes appear
-const MARGIN := 500                # margin so pipes never touch the screen edges
+const SPAWN_INTERVAL := 1.6       # seconds between spawns
+const SPAWN_OFFSET_X := 500       # how far in front of camera pipes appear
+const MARGIN := 500
+
+var game_tick := 1.0                # margin so pipes never touch the screen edges
 
 @onready var st: Label = $startup/CanvasLayer/start/Label
 @onready var ab: Label = $startup/CanvasLayer/about/Label
@@ -19,6 +21,13 @@ var spawn_timer: float = 0.0
 var time_elapsed: float = 0.0
 
 func _process(delta: float) -> void:
+	game_tick += 0.00004
+	Engine.time_scale = game_tick
+
+	
+	if $menu/close/resume.is_pressed():
+		game_tick = 1.0
+	
 	spawn_timer -= delta
 	time_elapsed += delta
 	if spawn_timer <= 0.0:
@@ -66,3 +75,7 @@ func _on_start_pressed() -> void:
 	$menu/open.visible = true
 	get_tree().paused = false
 	startup.queue_free()
+
+
+func _on_about_pressed() -> void:
+	game_tick = 1.0

@@ -33,6 +33,7 @@ atlas = ExtResource("8_r1fmb")
 region = Rect2(160, 96, 32, 32)
 
 [node name="main" type="Node2D"]
+position = Vector2(0, -1)
 script = ExtResource("1_yjt1p")
 
 [node name="sender" type="Node" parent="."]
@@ -132,4 +133,5 @@ script = ExtResource("10_h4frg")
 
 [connection signal="area_entered" from="CanvasLayer/Area2D" to="CanvasLayer/Area2D" method="_on_area_entered"]
 [connection signal="body_entered" from="CanvasLayer/Area2D" to="CanvasLayer/Area2D" method="_on_body_entered"]
+[connection signal="pressed" from="startup/CanvasLayer/about" to="." method="_on_about_pressed"]
 [connection signal="pressed" from="startup/CanvasLayer/start" to="." method="_on_start_pressed"]
