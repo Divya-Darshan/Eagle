@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://b7vosdhj0i52n"]
+[gd_scene load_steps=18 format=3 uid="uid://b7vosdhj0i52n"]
 
 [ext_resource type="Script" path="res://ui/menu/menu.gd" id="1_5uj2i"]
 [ext_resource type="Texture2D" uid="uid://bu785e03h8xx" path="res://icon/Metal Buttons Icons.png" id="2_0fc3w"]
@@ -45,6 +45,14 @@ region = Rect2(192, 160, 32, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_g4ibq"]
 atlas = ExtResource("2_0fc3w")
 region = Rect2(256, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_763jh"]
+atlas = ExtResource("2_0fc3w")
+region = Rect2(96, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fra63"]
+atlas = ExtResource("2_0fc3w")
+region = Rect2(160, 224, 32, 32)
 
 [node name="menu" type="CanvasLayer"]
 script = ExtResource("1_5uj2i")
@@ -172,6 +180,12 @@ scale = Vector2(0.909212, 0.909212)
 texture_normal = SubResource("AtlasTexture_cvn6q")
 texture_pressed = SubResource("AtlasTexture_g4ibq")
 
+[node name="apk" type="TouchScreenButton" parent="close/HBoxContainer/foot"]
+position = Vector2(-131.545, 354.725)
+scale = Vector2(0.909212, 0.909212)
+texture_normal = SubResource("AtlasTexture_763jh")
+texture_pressed = SubResource("AtlasTexture_fra63")
+
 [node name="Label2" type="Label" parent="close/HBoxContainer/foot"]
 clip_contents = true
 offset_left = -97.568
@@ -198,9 +212,22 @@ theme_override_fonts/font = ExtResource("3_iiwfg")
 text = "🏆 Online Leaderboard"
 justification_flags = 0
 
+[node name="Label5" type="Label" parent="close/HBoxContainer/foot"]
+clip_contents = true
+offset_left = -98.1499
+offset_top = 368.047
+offset_right = 44.8501
+offset_bottom = 384.047
+scale = Vector2(0.360683, 0.360683)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.537255)
+theme_override_fonts/font = ExtResource("3_iiwfg")
+text = "🟢 Update APK for latest updates"
+justification_flags = 0
+
 [connection signal="pressed" from="open" to="." method="_on_open_pressed"]
 [connection signal="pressed" from="close" to="." method="_on_close_pressed"]
 [connection signal="pressed" from="close/reset" to="." method="_on_reset_pressed"]
 [connection signal="pressed" from="close/resume" to="." method="_on_resume_pressed"]
 [connection signal="pressed" from="close/HBoxContainer/foot/github" to="." method="_on_github_pressed"]
 [connection signal="pressed" from="close/HBoxContainer/foot/leaderboard" to="." method="_on_leaderboard_pressed"]
+[connection signal="pressed" from="close/HBoxContainer/foot/apk" to="." method="_on_apk_pressed"]

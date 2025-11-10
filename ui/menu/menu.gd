@@ -40,9 +40,16 @@ func _on_resume_pressed() -> void:
 
 
 func _on_github_pressed() -> void:
+	await get_tree().create_timer(0.1).timeout
 	OS.shell_open("https://github.com/Divya-Darshan/eagle")
 
 
 
 func _on_leaderboard_pressed() -> void:
+	await get_tree().create_timer(0.1).timeout
 	OS.shell_open("https://eagle-score.onrender.com")
+
+
+func _on_apk_pressed() -> void:
+	await get_tree().create_timer(0.1).timeout
+	OS.shell_open("https://github.com/Divya-Darshan/Eagle/raw/refs/heads/main/app/eagle.apk")
