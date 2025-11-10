@@ -72,6 +72,7 @@ func _ready() -> void:
 	$menu/open.visible = false
 
 func _on_start_pressed() -> void:
+	await get_tree().create_timer(0.1).timeout
 	$menu/open.visible = true
 	get_tree().paused = false
 	startup.queue_free()

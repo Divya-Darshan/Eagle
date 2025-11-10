@@ -3,7 +3,7 @@ extends Label
 var t: float = 0.0
 var start_y: float = 0.0
 const AMPLITUDE := 0.5     # base movement distance (pixels)
-const SPEED := 0.5         # base speed
+const SPEED := 1.2         # base speed
 const RANDOM_STRENGTH := 0.1  # how much randomness affects the motion (0.0–1.0)
 
 func _ready() -> void:
