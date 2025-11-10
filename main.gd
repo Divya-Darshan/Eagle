@@ -7,7 +7,7 @@ extends Node2D
 const START_GAP_SIZE := 460       # initial vertical gap
 const MIN_GAP_SIZE := 600         # minimum gap (hardest difficulty)
 const PIPE_SPEED := -100.0        # move left speed
-const SPAWN_INTERVAL := 1.6       # seconds between spawns
+const SPAWN_INTERVAL := 2.2       # seconds between spawns
 const SPAWN_OFFSET_X := 500       # how far in front of camera pipes appear
 const MARGIN := 500
 

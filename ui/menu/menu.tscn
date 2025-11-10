@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://b7vosdhj0i52n"]
+[gd_scene load_steps=16 format=3 uid="uid://b7vosdhj0i52n"]
 
 [ext_resource type="Script" path="res://ui/menu/menu.gd" id="1_5uj2i"]
 [ext_resource type="Texture2D" uid="uid://bu785e03h8xx" path="res://icon/Metal Buttons Icons.png" id="2_0fc3w"]
@@ -38,6 +38,14 @@ region = Rect2(96, 96, 32, 32)
 atlas = ExtResource("2_0fc3w")
 region = Rect2(160, 96, 32, 32)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_cvn6q"]
+atlas = ExtResource("2_0fc3w")
+region = Rect2(192, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g4ibq"]
+atlas = ExtResource("2_0fc3w")
+region = Rect2(256, 160, 32, 32)
+
 [node name="menu" type="CanvasLayer"]
 script = ExtResource("1_5uj2i")
 
@@ -69,8 +77,8 @@ texture_pressed = SubResource("AtlasTexture_0pj3s")
 
 [node name="reset" type="TouchScreenButton" parent="close"]
 process_mode = 3
-position = Vector2(-146.445, 47.6799)
-scale = Vector2(2.199, 2.199)
+position = Vector2(-163.474, 119.199)
+scale = Vector2(1.5, 1.5)
 texture_normal = SubResource("AtlasTexture_hfvcl")
 texture_pressed = SubResource("AtlasTexture_fm3el")
 
@@ -87,8 +95,8 @@ metadata/_edit_use_anchors_ = true
 
 [node name="resume" type="TouchScreenButton" parent="close"]
 process_mode = 3
-position = Vector2(-146.445, 122.605)
-scale = Vector2(2.199, 2.199)
+position = Vector2(-161.771, 61.3027)
+scale = Vector2(1.5, 1.5)
 texture_normal = SubResource("AtlasTexture_t8i6k")
 texture_pressed = SubResource("AtlasTexture_ly41m")
 
@@ -101,50 +109,75 @@ scale = Vector2(0.723735, 0.723735)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.537255)
 theme_override_fonts/font = ExtResource("3_iiwfg")
 text = "Resume"
+metadata/_edit_use_anchors_ = true
 
-[node name="foot" type="Node2D" parent="close"]
-position = Vector2(-3.4057, -183.057)
-scale = Vector2(1.61052, 1.61052)
+[node name="username" parent="close" instance=ExtResource("5_n3nrh")]
+position = Vector2(-183.908, -292.891)
+scale = Vector2(0.379248, 0.379248)
 
-[node name="ColorRect" type="ColorRect" parent="close/foot"]
-offset_left = -135.338
-offset_top = 308.212
-offset_right = -95.3384
-offset_bottom = 348.212
-scale = Vector2(5.21438, 4.20158)
-color = Color(0.114897, 0.114897, 0.114897, 0.811765)
+[node name="HBoxContainer" type="HBoxContainer" parent="close"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -189.691
+offset_top = -258.054
+offset_right = -149.691
+offset_bottom = -218.054
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.652975, 0.652975)
 
-[node name="Github" type="Sprite2D" parent="close/foot"]
+[node name="foot" type="Node2D" parent="close/HBoxContainer"]
+position = Vector2(329, -2)
+scale = Vector2(2.349, 2.349)
+
+[node name="ColorRect" type="ColorRect" parent="close/HBoxContainer/foot"]
+offset_left = -213.332
+offset_top = 328.08
+offset_right = -173.333
+offset_bottom = 368.08
+scale = Vector2(7.64877, 5.27079)
+color = Color(0.0646965, 0.0646965, 0.0646965, 0.811765)
+
+[node name="Github" type="Sprite2D" parent="close/HBoxContainer/foot"]
 self_modulate = Color(1, 1, 1, 0.34902)
 texture_filter = 1
-position = Vector2(-85.5829, 347.548)
+position = Vector2(-116.275, 431.849)
 scale = Vector2(0.95674, 0.95674)
 texture = ExtResource("4_nnyul")
 
-[node name="Github3" type="Sprite2D" parent="close/foot"]
+[node name="Github3" type="Sprite2D" parent="close/HBoxContainer/foot"]
 self_modulate = Color(1, 1, 1, 0.215686)
 texture_filter = 1
-position = Vector2(-86.4343, 346.696)
+position = Vector2(-117.126, 430.997)
 scale = Vector2(0.981026, 0.981026)
 texture = ExtResource("4_nnyul")
 
-[node name="Github2" type="Sprite2D" parent="close/foot"]
+[node name="Github2" type="Sprite2D" parent="close/HBoxContainer/foot"]
 texture_filter = 1
-position = Vector2(-87.2299, 345.483)
+position = Vector2(-117.922, 429.784)
 scale = Vector2(0.890669, 0.890669)
 texture = ExtResource("4_nnyul")
 
-[node name="TouchScreenButton" type="TouchScreenButton" parent="close/foot"]
-position = Vector2(-101.504, 331.845)
+[node name="github" type="TouchScreenButton" parent="close/HBoxContainer/foot"]
+position = Vector2(-132.196, 416.146)
 scale = Vector2(0.934, 0.934)
 texture_normal = ExtResource("4_nnyul")
 
-[node name="Label2" type="Label" parent="close/foot"]
+[node name="leaderboard" type="TouchScreenButton" parent="close/HBoxContainer/foot"]
+position = Vector2(-131.545, 385.81)
+scale = Vector2(0.909212, 0.909212)
+texture_normal = SubResource("AtlasTexture_cvn6q")
+texture_pressed = SubResource("AtlasTexture_g4ibq")
+
+[node name="Label2" type="Label" parent="close/HBoxContainer/foot"]
 clip_contents = true
-offset_left = -66.8762
-offset_top = 337.817
-offset_right = 181.124
-offset_bottom = 385.817
+offset_left = -97.568
+offset_top = 422.118
+offset_right = 150.432
+offset_bottom = 470.118
 scale = Vector2(0.360683, 0.360683)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.537255)
 theme_override_fonts/font = ExtResource("3_iiwfg")
@@ -153,25 +186,21 @@ my GitHub page
 https://github.com/Divya-Darshan/eagle"
 justification_flags = 0
 
-[node name="Label3" type="Label" parent="close/foot"]
+[node name="Label4" type="Label" parent="close/HBoxContainer/foot"]
 clip_contents = true
-offset_left = -95.1598
-offset_top = 316.671
-offset_right = -39.1598
-offset_bottom = 356.671
-scale = Vector2(0.400957, 0.400957)
+offset_left = -98.1499
+offset_top = 396.912
+offset_right = 44.8501
+offset_bottom = 412.912
+scale = Vector2(0.360683, 0.360683)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.537255)
 theme_override_fonts/font = ExtResource("3_iiwfg")
-text = "Press Me
-    ⬇️"
+text = "🏆 Online Leaderboard"
 justification_flags = 0
-
-[node name="username" parent="close" instance=ExtResource("5_n3nrh")]
-position = Vector2(-170.285, 40.8685)
-scale = Vector2(0.379248, 0.379248)
 
 [connection signal="pressed" from="open" to="." method="_on_open_pressed"]
 [connection signal="pressed" from="close" to="." method="_on_close_pressed"]
 [connection signal="pressed" from="close/reset" to="." method="_on_reset_pressed"]
 [connection signal="pressed" from="close/resume" to="." method="_on_resume_pressed"]
-[connection signal="pressed" from="close/foot/TouchScreenButton" to="." method="_on_touch_screen_button_pressed"]
+[connection signal="pressed" from="close/HBoxContainer/foot/github" to="." method="_on_github_pressed"]
+[connection signal="pressed" from="close/HBoxContainer/foot/leaderboard" to="." method="_on_leaderboard_pressed"]
