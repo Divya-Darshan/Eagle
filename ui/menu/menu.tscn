@@ -126,12 +126,12 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -189.691
-offset_top = -258.054
+offset_top = -100.114
 offset_right = -149.691
-offset_bottom = -218.054
+offset_bottom = -60.1141
 grow_horizontal = 2
 grow_vertical = 0
-scale = Vector2(0.652975, 0.652975)
+scale = Vector2(0.51116, 0.51116)
 
 [node name="foot" type="Node2D" parent="close/HBoxContainer"]
 position = Vector2(329, -2)
@@ -143,10 +143,10 @@ offset_top = 328.08
 offset_right = -173.333
 offset_bottom = 368.08
 scale = Vector2(7.64877, 5.27079)
-color = Color(0.0646965, 0.0646965, 0.0646965, 0.811765)
+color = Color(0.18359, 0.18359, 0.18359, 0.811765)
 
 [node name="username" parent="close/HBoxContainer/foot" instance=ExtResource("5_n3nrh")]
-position = Vector2(-146.721, 137.127)
+position = Vector2(-120.205, 137.127)
 scale = Vector2(0.247254, 0.247254)
 
 [node name="Github" type="Sprite2D" parent="close/HBoxContainer/foot"]
@@ -174,11 +174,36 @@ position = Vector2(-132.196, 416.146)
 scale = Vector2(0.934, 0.934)
 texture_normal = ExtResource("4_nnyul")
 
+[node name="Label2" type="Label" parent="close/HBoxContainer/foot/github"]
+clip_contents = true
+offset_left = 36.7491
+offset_top = 10.3115
+offset_right = 284.749
+offset_bottom = 41.3115
+scale = Vector2(0.360683, 0.360683)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.537255)
+theme_override_fonts/font = ExtResource("3_iiwfg")
+text = "Find this project on my GitHub page 
+https://github.com/Divya-Darshan/eagle"
+justification_flags = 0
+
 [node name="leaderboard" type="TouchScreenButton" parent="close/HBoxContainer/foot"]
 position = Vector2(-131.545, 385.81)
 scale = Vector2(0.909212, 0.909212)
 texture_normal = SubResource("AtlasTexture_cvn6q")
 texture_pressed = SubResource("AtlasTexture_g4ibq")
+
+[node name="Label4" type="Label" parent="close/HBoxContainer/foot/leaderboard"]
+clip_contents = true
+offset_left = 36.7297
+offset_top = 14.6527
+offset_right = 179.73
+offset_bottom = 30.6527
+scale = Vector2(0.4, 0.4)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.537255)
+theme_override_fonts/font = ExtResource("3_iiwfg")
+text = "🏆 Online Leaderboard"
+justification_flags = 0
 
 [node name="apk" type="TouchScreenButton" parent="close/HBoxContainer/foot"]
 position = Vector2(-131.545, 354.725)
@@ -186,42 +211,17 @@ scale = Vector2(0.909212, 0.909212)
 texture_normal = SubResource("AtlasTexture_763jh")
 texture_pressed = SubResource("AtlasTexture_fra63")
 
-[node name="Label2" type="Label" parent="close/HBoxContainer/foot"]
+[node name="Label5" type="Label" parent="close/HBoxContainer/foot/apk"]
 clip_contents = true
-offset_left = -97.568
-offset_top = 422.118
-offset_right = 150.432
-offset_bottom = 470.118
-scale = Vector2(0.360683, 0.360683)
+offset_left = 36.7297
+offset_top = 10.1023
+offset_right = 157.73
+offset_bottom = 43.1023
+scale = Vector2(0.4, 0.4)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.537255)
 theme_override_fonts/font = ExtResource("3_iiwfg")
-text = "Find this project on
-my GitHub page 
-https://github.com/Divya-Darshan/eagle"
-justification_flags = 0
-
-[node name="Label4" type="Label" parent="close/HBoxContainer/foot"]
-clip_contents = true
-offset_left = -98.1499
-offset_top = 396.912
-offset_right = 44.8501
-offset_bottom = 412.912
-scale = Vector2(0.360683, 0.360683)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.537255)
-theme_override_fonts/font = ExtResource("3_iiwfg")
-text = "🏆 Online Leaderboard"
-justification_flags = 0
-
-[node name="Label5" type="Label" parent="close/HBoxContainer/foot"]
-clip_contents = true
-offset_left = -98.1499
-offset_top = 368.047
-offset_right = 44.8501
-offset_bottom = 384.047
-scale = Vector2(0.360683, 0.360683)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.537255)
-theme_override_fonts/font = ExtResource("3_iiwfg")
-text = "🟢 Update APK for latest updates"
+text = "🟢 Update APK for
+     latest updates"
 justification_flags = 0
 
 [connection signal="pressed" from="open" to="." method="_on_open_pressed"]
