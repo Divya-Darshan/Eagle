@@ -5,6 +5,8 @@ const FLAP_STRENGTH: float = -350.0 # Upward force when tapping
 const FORWARD_SPEED: float = 200.0  # Constant forward speed
 const MAX_ROTATION: float = 1.0     # Max tilt in radians (~23 degrees)
 @onready var val: AudioStreamPlayer2D = $val
+@onready var ya: AudioStreamPlayer2D = $ya
+
 
 func _physics_process(delta: float) -> void:
 	# Apply gravity
@@ -29,6 +31,9 @@ func _physics_process(delta: float) -> void:
 
 func _unhandled_input(event: InputEvent) -> void:
 	# Mobile: Screen touch anywhere
-	if event is InputEventScreenTouch and event.pressed:
+	if event is InputEventScreenTouch and event.pressed :
 		velocity.y = FLAP_STRENGTH
-		val.play()
+		if GlobalCheckButton.is_pressed_goon:
+			pass
+		else:
+			val.play()

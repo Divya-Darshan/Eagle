@@ -82,7 +82,7 @@ shape = SubResource("WorldBoundaryShape2D_vsd5n")
 process_mode = 3
 position = Vector2(45, 3)
 stream = ExtResource("3_v1g7k")
-volume_db = -80.0
+volume_db = 24.0
 
 [node name="menu" parent="." instance=ExtResource("7_6ypv4")]
 

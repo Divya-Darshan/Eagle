@@ -22,7 +22,7 @@ func add_coin() -> void:
 	val += 0.5
 	save_data()
 	update_label()
-	print("Coins:", val)
+	#print("Coins:", val) #prints conin value
 
 func update_label():
 	if val > 0:

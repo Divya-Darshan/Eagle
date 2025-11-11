@@ -21,6 +21,8 @@ config/icon="res://Player/bird.png"
 [autoload]
 
 Score="*res://global/score.tscn"
+Goon="*res://sfx/goon.tscn"
+GlobalCheckButton="*res://global/check_button.gd"
 
 [display]
 

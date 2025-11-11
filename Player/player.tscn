@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://c6g18e2vqf0b7"]
+[gd_scene load_steps=7 format=3 uid="uid://c6g18e2vqf0b7"]
 
 [ext_resource type="Script" path="res://gd/player.gd" id="1_jnjht"]
 [ext_resource type="Texture2D" uid="uid://ddyqvhneqjii3" path="res://Player/bird.png" id="3_0ay00"]
+[ext_resource type="AudioStream" uid="uid://bopqtmyhkfow0" path="res://sfx/val_A01.mp3" id="3_1b3fl"]
 [ext_resource type="AudioStream" uid="uid://bkv8sy1rcil8u" path="res://sfx/yamete.mp3" id="3_ggbhd"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_0xfyy"]
@@ -36,6 +37,11 @@ scale = Vector2(0.549511, 0.374022)
 shape = SubResource("CircleShape2D_hgm8q")
 
 [node name="val" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(0.00702408, 1.68362)
+stream = ExtResource("3_1b3fl")
+volume_db = 24.0
+
+[node name="ya" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(0.00702408, 1.68362)
 stream = ExtResource("3_ggbhd")
 volume_db = 24.0

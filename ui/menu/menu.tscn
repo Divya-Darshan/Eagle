@@ -1,10 +1,11 @@
-[gd_scene load_steps=18 format=3 uid="uid://b7vosdhj0i52n"]
+[gd_scene load_steps=19 format=3 uid="uid://b7vosdhj0i52n"]
 
 [ext_resource type="Script" path="res://ui/menu/menu.gd" id="1_5uj2i"]
 [ext_resource type="Texture2D" uid="uid://bu785e03h8xx" path="res://icon/Metal Buttons Icons.png" id="2_0fc3w"]
 [ext_resource type="FontFile" uid="uid://b07xmv84cnmcm" path="res://fonts/m6x11.ttf" id="3_iiwfg"]
 [ext_resource type="Texture2D" uid="uid://0asph0ldn3st" path="res://icon/github.png" id="4_nnyul"]
 [ext_resource type="PackedScene" uid="uid://6hkxahqm8o68" path="res://user/username.tscn" id="5_n3nrh"]
+[ext_resource type="PackedScene" uid="uid://bpd2k7admpsvk" path="res://sfx/goon.tscn" id="6_ah353"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_u6nv8"]
 atlas = ExtResource("2_0fc3w")
@@ -223,6 +224,13 @@ theme_override_fonts/font = ExtResource("3_iiwfg")
 text = "🟢 Update APK for
      latest updates"
 justification_flags = 0
+
+[node name="goon" parent="close" instance=ExtResource("6_ah353")]
+offset_left = -160.068
+offset_top = 183.908
+offset_right = -92.0681
+offset_bottom = 215.908
+scale = Vector2(1.40333, 1.40333)
 
 [connection signal="pressed" from="open" to="." method="_on_open_pressed"]
 [connection signal="pressed" from="close" to="." method="_on_close_pressed"]

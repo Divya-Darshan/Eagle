@@ -1,0 +1,70 @@
+[gd_scene load_steps=14 format=3 uid="uid://bpd2k7admpsvk"]
+
+[ext_resource type="Script" path="res://global/check_button.gd" id="1_foc18"]
+[ext_resource type="Texture2D" uid="uid://bd3w1fo1e8n8k" path="res://icon/ya.jpg" id="2_i4g0l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fxj0p"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yjwsa"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rf38e"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_q17m3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hfiap"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sn4k5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gta51"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ktrxh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_puwdg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3w5sn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3c7ch"]
+
+[node name="goon" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 0
+offset_left = 104.0
+offset_top = -664.0
+offset_right = 172.0
+offset_bottom = -632.0
+scale = Vector2(5.16006, 5.16006)
+script = ExtResource("1_foc18")
+
+[node name="CheckButton" type="CheckButton" parent="."]
+process_mode = 3
+layout_mode = 0
+offset_left = 31.0074
+offset_top = 6.20148
+offset_right = 63.0074
+offset_bottom = 22.2015
+theme_override_styles/focus = SubResource("StyleBoxEmpty_fxj0p")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_yjwsa")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_rf38e")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_q17m3")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_hfiap")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_sn4k5")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_gta51")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_ktrxh")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_puwdg")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_3w5sn")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_3c7ch")
+action_mode = 0
+
+[node name="goon" type="TouchScreenButton" parent="."]
+self_modulate = Color(0.687215, 0.687215, 0.687215, 1)
+scale = Vector2(0.0498787, 0.0498787)
+texture_normal = ExtResource("2_i4g0l")
+
+[node name="goon2" type="TouchScreenButton" parent="."]
+visible = false
+scale = Vector2(0.0498787, 0.0498787)
+texture_normal = ExtResource("2_i4g0l")
+
+[connection signal="pressed" from="goon" to="." method="_on_goon_pressed"]
+[connection signal="pressed" from="goon2" to="." method="_on_goon_2_pressed"]
