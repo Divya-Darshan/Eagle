@@ -50,8 +50,8 @@ Tap, flap, dodge, survive — and compete to get the highest score!
 
 ![Gameplay Screenshot](./img/board.png)
 
-
 </div>
+
 ---
 
 ## 🎯 **About the Game**
