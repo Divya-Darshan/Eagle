@@ -27,7 +27,7 @@ Tap, flap, dodge, survive — and compete to get the highest score!
 
 <div align="center">
 
-### 📁 **Check out the Server Repo for the Online Leaderboard**
+### 📁 **Server Repo for the Online Leaderboard**
 
 <a href="https://github.com/Divya-Darshan/eagle_server">
   <img src="https://img.shields.io/badge/Server%20Repository-6F42C1?style=for-the-badge&logo=github&logoColor=white&labelColor=0A0A0A&color=6F42C1" height="65"/>
