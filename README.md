@@ -46,6 +46,20 @@ Tap, flap, dodge, survive — and compete to get the highest score!
 
 </div>
 
+<div align="center">
+
+![Gameplay Screenshot](./img/board.png)
+
+</div>
+
+Alpha version of the server gameplay. (Now it's updated with new UI)
+<div align="center">
+  <video src="./img/vid.mp4" width="300" controls>
+	Your browser does not support the video tag.
+  </video>
+</div>
+
+
 ---
 
 ## 🎯 **About the Game**
@@ -86,6 +100,19 @@ Perfect for:
 - 🦅 Unlockable bird skins  
 - 🌫️ Particle effects  
 - 💾 Cloud save  
+
+---
+
+# Screenshots
+
+<div align="center">
+  <img src="./img/1.jpg" width="350"/> 
+  <img src="./img/2.jpg" width="350"/> 
+  <img src="./img/3.jpg" width="350"/> 
+  <img src="./img/4.jpg" width="350"/> 
+  <img src="./img/5.jpg" width="350"/> 
+  <img src="./img/6.jpg" width="350"/> 
+</div>
 
 ---
 
