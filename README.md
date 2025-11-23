@@ -50,16 +50,8 @@ Tap, flap, dodge, survive — and compete to get the highest score!
 
 ![Gameplay Screenshot](./img/board.png)
 
+
 </div>
-
-Alpha version of the server gameplay. (Now it's updated with new UI)
-<div align="center">
-  <video src="./img/vid.mp4" width="300" controls>
-	Your browser does not support the video tag.
-  </video>
-</div>
-
-
 ---
 
 ## 🎯 **About the Game**
@@ -107,6 +99,7 @@ Perfect for:
 
 <div align="center">
   <img src="./img/1.jpg" width="350"/> 
+  <img src="./img/7.jpg" width="350"/> 
   <img src="./img/2.jpg" width="350"/> 
   <img src="./img/3.jpg" width="350"/> 
   <img src="./img/4.jpg" width="350"/> 
