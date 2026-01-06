@@ -33,6 +33,10 @@ window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 window/handheld/orientation=1
 
+[global_group]
+
+GameMenu=""
+
 [input_devices]
 
 pointing/emulate_touch_from_mouse=true

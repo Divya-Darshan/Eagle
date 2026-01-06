@@ -1,16 +1,16 @@
 [gd_scene load_steps=18 format=3 uid="uid://cp8q5fj3di6kd"]
 
 [ext_resource type="PackedScene" uid="uid://c6g18e2vqf0b7" path="res://Player/player.tscn" id="1_cpyrx"]
-[ext_resource type="Script" path="res://main.gd" id="1_yjt1p"]
-[ext_resource type="Script" path="res://sender.gd" id="2_w3dpg"]
+[ext_resource type="Script" uid="uid://81re11ak75y2" path="res://main.gd" id="1_yjt1p"]
+[ext_resource type="Script" uid="uid://b0g652is8jp23" path="res://sender.gd" id="2_w3dpg"]
 [ext_resource type="AudioStream" uid="uid://pb16ovmclmar" path="res://sfx/ahhhh.mp3" id="3_v1g7k"]
 [ext_resource type="PackedScene" uid="uid://cakim23owrjr3" path="res://global/score.tscn" id="4_dp014"]
 [ext_resource type="PackedScene" uid="uid://qi2jd0rmpg7s" path="res://Background/parallax_background.tscn" id="4_sycqg"]
-[ext_resource type="Script" path="res://sfx/worldborder.gd" id="5_e4eth"]
+[ext_resource type="Script" uid="uid://dogjjppn4gmy5" path="res://sfx/worldborder.gd" id="5_e4eth"]
 [ext_resource type="PackedScene" uid="uid://b7vosdhj0i52n" path="res://ui/menu/menu.tscn" id="7_6ypv4"]
 [ext_resource type="Texture2D" uid="uid://bu785e03h8xx" path="res://icon/Metal Buttons Icons.png" id="8_r1fmb"]
 [ext_resource type="FontFile" uid="uid://b07xmv84cnmcm" path="res://fonts/m6x11.ttf" id="9_sc5u2"]
-[ext_resource type="Script" path="res://ui/menu/label.gd" id="10_h4frg"]
+[ext_resource type="Script" uid="uid://b1s6kx2rnv03t" path="res://ui/menu/label.gd" id="10_h4frg"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_37rnh"]
 

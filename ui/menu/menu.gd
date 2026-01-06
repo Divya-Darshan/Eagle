@@ -1,3 +1,4 @@
+# "res://ui/menu/menu.tscn"
 extends CanvasLayer
 
 
@@ -13,6 +14,8 @@ func _on_open_pressed() -> void:
 	close.visible = true
 	open.visible = false
 	get_tree().paused = true 
+
+
 
 
 

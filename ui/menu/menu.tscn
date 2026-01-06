@@ -55,7 +55,7 @@ region = Rect2(96, 224, 32, 32)
 atlas = ExtResource("2_0fc3w")
 region = Rect2(160, 224, 32, 32)
 
-[node name="menu" type="CanvasLayer"]
+[node name="menu" type="CanvasLayer" groups=["GameMenu"]]
 script = ExtResource("1_5uj2i")
 
 [node name="ColorRect" type="ColorRect" parent="."]
