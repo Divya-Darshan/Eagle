@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://qi2jd0rmpg7s"]
+[gd_scene load_steps=3 format=3 uid="uid://qi2jd0rmpg7s"]
 
 [ext_resource type="Texture2D" uid="uid://3juh48n353m7" path="res://Background/Background5.png" id="1_hl0gb"]
+[ext_resource type="Texture2D" uid="uid://dgq6xjdmwpdav" path="res://Background/Background4.png" id="2_ulxvv"]
 
 [node name="ParallaxBackground" type="ParallaxBackground"]
 
@@ -97,4 +98,4 @@ motion_mirroring = Vector2(1156.31, 0)
 texture_filter = 1
 position = Vector2(570, 97)
 scale = Vector2(4.51754, 4.51754)
-texture = ExtResource("1_hl0gb")
+texture = ExtResource("2_ulxvv")

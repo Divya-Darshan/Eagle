@@ -12,11 +12,10 @@ config_version=5
 
 config/name="Eagle"
 run/main_scene="res://main.tscn"
-config/custom_user_dir_name="cmd"
 config/features=PackedStringArray("4.5", "Mobile")
 boot_splash/bg_color=Color(0, 0, 0, 1)
 boot_splash/fullsize=false
-boot_splash/image="res://icon/in.png"
+boot_splash/image="uid://bk8q6kt0tl250"
 config/icon="res://Player/bird.png"
 
 [autoload]
