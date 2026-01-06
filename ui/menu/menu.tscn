@@ -1,6 +1,6 @@
 [gd_scene load_steps=19 format=3 uid="uid://b7vosdhj0i52n"]
 
-[ext_resource type="Script" path="res://ui/menu/menu.gd" id="1_5uj2i"]
+[ext_resource type="Script" uid="uid://d1l1pdx22xq0e" path="res://ui/menu/menu.gd" id="1_5uj2i"]
 [ext_resource type="Texture2D" uid="uid://bu785e03h8xx" path="res://icon/Metal Buttons Icons.png" id="2_0fc3w"]
 [ext_resource type="FontFile" uid="uid://b07xmv84cnmcm" path="res://fonts/m6x11.ttf" id="3_iiwfg"]
 [ext_resource type="Texture2D" uid="uid://0asph0ldn3st" path="res://icon/github.png" id="4_nnyul"]
@@ -147,31 +147,11 @@ scale = Vector2(7.64877, 5.27079)
 color = Color(0.18359, 0.18359, 0.18359, 0.811765)
 
 [node name="username" parent="close/HBoxContainer/foot" instance=ExtResource("5_n3nrh")]
-position = Vector2(-120.205, 137.127)
+position = Vector2(-80.4952, 136.99844)
 scale = Vector2(0.247254, 0.247254)
 
-[node name="Github" type="Sprite2D" parent="close/HBoxContainer/foot"]
-self_modulate = Color(1, 1, 1, 0.34902)
-texture_filter = 1
-position = Vector2(-116.275, 431.849)
-scale = Vector2(0.95674, 0.95674)
-texture = ExtResource("4_nnyul")
-
-[node name="Github3" type="Sprite2D" parent="close/HBoxContainer/foot"]
-self_modulate = Color(1, 1, 1, 0.215686)
-texture_filter = 1
-position = Vector2(-117.126, 430.997)
-scale = Vector2(0.981026, 0.981026)
-texture = ExtResource("4_nnyul")
-
-[node name="Github2" type="Sprite2D" parent="close/HBoxContainer/foot"]
-texture_filter = 1
-position = Vector2(-117.922, 429.784)
-scale = Vector2(0.890669, 0.890669)
-texture = ExtResource("4_nnyul")
-
 [node name="github" type="TouchScreenButton" parent="close/HBoxContainer/foot"]
-position = Vector2(-132.196, 416.146)
+position = Vector2(-132.196, 382.90063)
 scale = Vector2(0.934, 0.934)
 texture_normal = ExtResource("4_nnyul")
 
@@ -187,9 +167,10 @@ theme_override_fonts/font = ExtResource("3_iiwfg")
 text = "Find this project on my GitHub page 
 https://github.com/Divya-Darshan/eagle"
 justification_flags = 0
+metadata/_edit_use_anchors_ = true
 
 [node name="leaderboard" type="TouchScreenButton" parent="close/HBoxContainer/foot"]
-position = Vector2(-131.545, 385.81)
+position = Vector2(-131.545, 352.56464)
 scale = Vector2(0.909212, 0.909212)
 texture_normal = SubResource("AtlasTexture_cvn6q")
 texture_pressed = SubResource("AtlasTexture_g4ibq")
@@ -207,6 +188,7 @@ text = "🏆 Online Leaderboard"
 justification_flags = 0
 
 [node name="apk" type="TouchScreenButton" parent="close/HBoxContainer/foot"]
+visible = false
 position = Vector2(-131.545, 354.725)
 scale = Vector2(0.909212, 0.909212)
 texture_normal = SubResource("AtlasTexture_763jh")
@@ -226,6 +208,7 @@ text = "🟢 Update APK for
 justification_flags = 0
 
 [node name="goon" parent="close" instance=ExtResource("6_ah353")]
+visible = false
 offset_left = -160.068
 offset_top = 183.908
 offset_right = -92.0681

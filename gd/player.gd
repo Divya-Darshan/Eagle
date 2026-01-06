@@ -6,6 +6,7 @@ const FORWARD_SPEED: float = 200.0  # Constant forward speed
 const MAX_ROTATION: float = 1.0     # Max tilt in radians (~23 degrees)
 @onready var val: AudioStreamPlayer2D = $val
 @onready var ya: AudioStreamPlayer2D = $ya
+@onready var animesprite: AnimatedSprite2D = $AnimatedSprite2D2
 
 
 func _physics_process(delta: float) -> void:
@@ -15,6 +16,7 @@ func _physics_process(delta: float) -> void:
 	# PC: Space/Enter (ui_accept)
 	if Input.is_action_just_pressed("ui_accept"):
 		velocity.y = FLAP_STRENGTH
+		animesprite.play("fly")
 		val.play()
 	# Constant forward movement
 	velocity.x = FORWARD_SPEED
@@ -36,4 +38,5 @@ func _unhandled_input(event: InputEvent) -> void:
 		if GlobalCheckButton.is_pressed_goon:
 			pass
 		else:
+			animesprite.play("fly")
 			val.play()
