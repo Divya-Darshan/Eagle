@@ -111,7 +111,7 @@ Perfect for:
 
 ## 🤝 **Contributing**
 Pull requests are welcome!  <3
-If you’d like to improve visuals, UI, or gameplay — feel free to contribute.
+If you’d like to improve visuals, UI, or gameplay, feel free to contribute.
 
 ---
 
