@@ -78,6 +78,7 @@ passby_press = true
 
 [node name="close" type="TouchScreenButton" parent="."]
 process_mode = 3
+visible = false
 position = Vector2(400, 16)
 scale = Vector2(2.349, 2.349)
 texture_normal = SubResource("AtlasTexture_r0u7i")
