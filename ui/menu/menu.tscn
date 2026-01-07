@@ -184,7 +184,7 @@ offset_bottom = 28.478495
 scale = Vector2(0.4256809, 0.4256809)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.537255)
 theme_override_fonts/font = ExtResource("3_iiwfg")
-text = "🏆Leaderboard"
+text = " Leaderboard"
 justification_flags = 0
 metadata/_edit_use_anchors_ = true
 
