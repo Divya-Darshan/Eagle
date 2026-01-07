@@ -176,20 +176,20 @@ texture_pressed = SubResource("AtlasTexture_g4ibq")
 
 [node name="Label4" type="Label" parent="close/HBoxContainer/foot/leaderboard"]
 clip_contents = true
-offset_left = 34.309944
-offset_top = 14.6527
-offset_right = 177.31024
-offset_bottom = 30.6527
-scale = Vector2(0.30483902, 0.30483902)
+offset_left = 34.309948
+offset_top = 12.478495
+offset_right = 177.31026
+offset_bottom = 28.478495
+scale = Vector2(0.4256809, 0.4256809)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.537255)
 theme_override_fonts/font = ExtResource("3_iiwfg")
-text = "🏆 Online Leaderboard"
+text = "🏆Leaderboard"
 justification_flags = 0
 metadata/_edit_use_anchors_ = true
 
 [node name="apk" type="TouchScreenButton" parent="close/HBoxContainer/foot"]
-position = Vector2(10.26952, 352.56464)
-scale = Vector2(0.909212, 0.909212)
+position = Vector2(-63.476814, 335.54626)
+scale = Vector2(0.46434772, 0.46434772)
 texture_normal = SubResource("AtlasTexture_763jh")
 texture_pressed = SubResource("AtlasTexture_fra63")
 

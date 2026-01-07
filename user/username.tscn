@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://6hkxahqm8o68"]
 
-[ext_resource type="Script" path="res://user/user.gd" id="1_j8knf"]
+[ext_resource type="Script" uid="uid://c7wnobbjihv2g" path="res://user/user.gd" id="1_j8knf"]
 [ext_resource type="FontFile" uid="uid://b07xmv84cnmcm" path="res://fonts/m6x11.ttf" id="2_iwakc"]
 
 [node name="username" type="Node2D"]
@@ -9,10 +9,10 @@ script = ExtResource("1_j8knf")
 
 [node name="Label" type="Label" parent="."]
 process_mode = 3
-offset_left = 152.0
-offset_top = 800.0
-offset_right = 271.0
-offset_bottom = 814.0
+offset_left = 136.0
+offset_top = 819.00006
+offset_right = 255.0
+offset_bottom = 833.00006
 scale = Vector2(2.41906, 2.48792)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.537255)
 theme_override_fonts/font = ExtResource("2_iwakc")
