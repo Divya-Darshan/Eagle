@@ -79,4 +79,4 @@ func _on_start_pressed() -> void:
 
 
 func _on_about_pressed() -> void:
-	game_tick = 1.0
+	OS.shell_open("https://github.com/Divya-Darshan/Eagle/blob/main/README.md")
