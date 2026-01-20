@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://cp8q5fj3di6kd"]
+[gd_scene load_steps=24 format=3 uid="uid://cp8q5fj3di6kd"]
 
 [ext_resource type="PackedScene" uid="uid://c6g18e2vqf0b7" path="res://Player/player.tscn" id="1_cpyrx"]
 [ext_resource type="Script" uid="uid://81re11ak75y2" path="res://main.gd" id="1_yjt1p"]
@@ -11,10 +11,12 @@
 [ext_resource type="Texture2D" uid="uid://bu785e03h8xx" path="res://icon/Metal Buttons Icons.png" id="8_r1fmb"]
 [ext_resource type="FontFile" uid="uid://b07xmv84cnmcm" path="res://fonts/m6x11.ttf" id="9_sc5u2"]
 [ext_resource type="Script" uid="uid://b1s6kx2rnv03t" path="res://ui/menu/label.gd" id="10_h4frg"]
+[ext_resource type="PackedScene" uid="uid://6hkxahqm8o68" path="res://user/username.tscn" id="12_ycdy4"]
+[ext_resource type="Texture2D" uid="uid://0asph0ldn3st" path="res://icon/github.png" id="13_w48qg"]
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_37rnh"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ycdy4"]
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_vsd5n"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w48qg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ghfoy"]
 atlas = ExtResource("8_r1fmb")
@@ -31,6 +33,22 @@ region = Rect2(96, 96, 32, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_kffll"]
 atlas = ExtResource("8_r1fmb")
 region = Rect2(160, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vivmo"]
+atlas = ExtResource("8_r1fmb")
+region = Rect2(192, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2cqfq"]
+atlas = ExtResource("8_r1fmb")
+region = Rect2(256, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yaehf"]
+atlas = ExtResource("8_r1fmb")
+region = Rect2(96, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_074og"]
+atlas = ExtResource("8_r1fmb")
+region = Rect2(160, 224, 32, 32)
 
 [node name="main" type="Node2D"]
 position = Vector2(0, -1)
@@ -69,14 +87,14 @@ script = ExtResource("5_e4eth")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/Area2D"]
 position = Vector2(592, 843)
-scale = Vector2(3.27108, 0.77504)
-shape = SubResource("WorldBoundaryShape2D_37rnh")
+scale = Vector2(513.137, 0.13158733)
+shape = SubResource("RectangleShape2D_ycdy4")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="CanvasLayer/Area2D"]
 position = Vector2(629, -207)
 rotation = -3.14159
-scale = Vector2(1.97295, 0.59323)
-shape = SubResource("WorldBoundaryShape2D_vsd5n")
+scale = Vector2(1317.2429, 0.89298505)
+shape = SubResource("RectangleShape2D_w48qg")
 
 [node name="val" type="AudioStreamPlayer2D" parent="CanvasLayer/Area2D"]
 process_mode = 3
@@ -130,6 +148,94 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.537255)
 theme_override_fonts/font = ExtResource("9_sc5u2")
 text = "Start"
 script = ExtResource("10_h4frg")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="startup/CanvasLayer"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -139.0
+offset_top = -728.0
+offset_right = -99.0
+offset_bottom = -688.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.74517095, 0.74517095)
+
+[node name="foot" type="Node2D" parent="startup/CanvasLayer/HBoxContainer"]
+position = Vector2(329, -2)
+scale = Vector2(2.349, 2.349)
+
+[node name="ColorRect" type="ColorRect" parent="startup/CanvasLayer/HBoxContainer/foot"]
+offset_left = -212.61418
+offset_top = 327.0614
+offset_right = -172.61517
+offset_bottom = 367.0614
+scale = Vector2(7.64877, 5.27079)
+color = Color(0, 0, 0, 0.72156864)
+
+[node name="username" parent="startup/CanvasLayer/HBoxContainer/foot" instance=ExtResource("12_ycdy4")]
+position = Vector2(-34.36987, 136.99844)
+scale = Vector2(0.247254, 0.247254)
+
+[node name="github" type="TouchScreenButton" parent="startup/CanvasLayer/HBoxContainer/foot"]
+position = Vector2(-185.19199, 373.96497)
+scale = Vector2(0.934, 0.934)
+texture_normal = ExtResource("13_w48qg")
+
+[node name="Label2" type="Label" parent="startup/CanvasLayer/HBoxContainer/foot/github"]
+clip_contents = true
+offset_left = 36.7491
+offset_top = 10.3115
+offset_right = 284.749
+offset_bottom = 41.3115
+scale = Vector2(0.360683, 0.360683)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.537255)
+theme_override_fonts/font = ExtResource("9_sc5u2")
+text = "Find this project on my GitHub
+https://github.com/Divya-Darshan/eagle"
+justification_flags = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="leaderboard" type="TouchScreenButton" parent="startup/CanvasLayer/HBoxContainer/foot"]
+position = Vector2(-184.541, 343.62897)
+scale = Vector2(0.909212, 0.909212)
+texture_normal = SubResource("AtlasTexture_vivmo")
+texture_pressed = SubResource("AtlasTexture_2cqfq")
+
+[node name="Label4" type="Label" parent="startup/CanvasLayer/HBoxContainer/foot/leaderboard"]
+clip_contents = true
+offset_left = 34.309948
+offset_top = 12.478495
+offset_right = 177.31026
+offset_bottom = 28.478495
+scale = Vector2(0.4256809, 0.4256809)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.537255)
+theme_override_fonts/font = ExtResource("9_sc5u2")
+text = " Leaderboard"
+justification_flags = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="apk" type="TouchScreenButton" parent="startup/CanvasLayer/HBoxContainer/foot"]
+position = Vector2(-20.658772, 335.54626)
+scale = Vector2(0.46434772, 0.46434772)
+texture_normal = SubResource("AtlasTexture_yaehf")
+texture_pressed = SubResource("AtlasTexture_074og")
+
+[node name="Label5" type="Label" parent="startup/CanvasLayer/HBoxContainer/foot/apk"]
+visible = false
+clip_contents = true
+offset_left = 36.7297
+offset_top = 10.1023
+offset_right = 157.73
+offset_bottom = 43.1023
+scale = Vector2(0.4, 0.4)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.537255)
+theme_override_fonts/font = ExtResource("9_sc5u2")
+text = "🟢 Update APK for
+     latest updates"
+justification_flags = 0
 
 [connection signal="body_entered" from="CanvasLayer/Area2D" to="CanvasLayer/Area2D" method="_on_body_entered"]
 [connection signal="pressed" from="startup/CanvasLayer/about" to="." method="_on_about_pressed"]
