@@ -156,12 +156,12 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -139.0
-offset_top = -728.0
+offset_top = -781.0
 offset_right = -99.0
-offset_bottom = -688.0
+offset_bottom = -741.0
 grow_horizontal = 2
 grow_vertical = 0
-scale = Vector2(0.74517095, 0.74517095)
+scale = Vector2(0.8049734, 0.8049734)
 
 [node name="foot" type="Node2D" parent="startup/CanvasLayer/HBoxContainer"]
 position = Vector2(329, -2)
@@ -187,10 +187,10 @@ texture_normal = ExtResource("13_w48qg")
 [node name="Label2" type="Label" parent="startup/CanvasLayer/HBoxContainer/foot/github"]
 clip_contents = true
 offset_left = 36.7491
-offset_top = 10.3115
-offset_right = 284.749
-offset_bottom = 41.3115
-scale = Vector2(0.360683, 0.360683)
+offset_top = 8.768587
+offset_right = 284.74908
+offset_bottom = 39.768585
+scale = Vector2(0.5141233, 0.5141233)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.537255)
 theme_override_fonts/font = ExtResource("9_sc5u2")
 text = "Find this project on my GitHub
@@ -210,7 +210,7 @@ offset_left = 34.309948
 offset_top = 12.478495
 offset_right = 177.31026
 offset_bottom = 28.478495
-scale = Vector2(0.4256809, 0.4256809)
+scale = Vector2(0.5612892, 0.5612892)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.537255)
 theme_override_fonts/font = ExtResource("9_sc5u2")
 text = " Leaderboard"
@@ -218,7 +218,7 @@ justification_flags = 0
 metadata/_edit_use_anchors_ = true
 
 [node name="apk" type="TouchScreenButton" parent="startup/CanvasLayer/HBoxContainer/foot"]
-position = Vector2(-20.658772, 335.54626)
+position = Vector2(-27.413792, 335.54626)
 scale = Vector2(0.46434772, 0.46434772)
 texture_normal = SubResource("AtlasTexture_yaehf")
 texture_pressed = SubResource("AtlasTexture_074og")
