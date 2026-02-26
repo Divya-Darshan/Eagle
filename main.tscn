@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://cp8q5fj3di6kd"]
+[gd_scene format=3 uid="uid://cp8q5fj3di6kd"]
 
 [ext_resource type="PackedScene" uid="uid://c6g18e2vqf0b7" path="res://Player/player.tscn" id="1_cpyrx"]
 [ext_resource type="Script" uid="uid://81re11ak75y2" path="res://main.gd" id="1_yjt1p"]
@@ -50,24 +50,24 @@ region = Rect2(96, 224, 32, 32)
 atlas = ExtResource("8_r1fmb")
 region = Rect2(160, 224, 32, 32)
 
-[node name="main" type="Node2D"]
+[node name="main" type="Node2D" unique_id=988555539]
 position = Vector2(0, -1)
 script = ExtResource("1_yjt1p")
 
-[node name="sender" type="Node" parent="."]
+[node name="sender" type="Node" parent="." unique_id=672891230]
 script = ExtResource("2_w3dpg")
 
-[node name="Label" type="Label" parent="sender"]
+[node name="Label" type="Label" parent="sender" unique_id=2136051185]
 offset_right = 40.0
 offset_bottom = 23.0
 
-[node name="HTTPRequest" type="HTTPRequest" parent="sender"]
+[node name="HTTPRequest" type="HTTPRequest" parent="sender" unique_id=1134004881]
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_cpyrx")]
+[node name="CharacterBody2D" parent="." unique_id=1733611020 instance=ExtResource("1_cpyrx")]
 position = Vector2(80, 112)
 scale = Vector2(6.78498, 6.78498)
 
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=60570228]
 position = Vector2(-4.06659, 3.65993)
 limit_top = -200
 limit_bottom = 800
@@ -75,49 +75,49 @@ position_smoothing_enabled = true
 position_smoothing_speed = 10.0
 rotation_smoothing_enabled = true
 
-[node name="ParallaxBackground" parent="." instance=ExtResource("4_sycqg")]
+[node name="ParallaxBackground" type="Node2D" parent="." unique_id=2126684806 instance=ExtResource("4_sycqg")]
 
-[node name="coin" parent="." instance=ExtResource("4_dp014")]
+[node name="coin" parent="." unique_id=1192421192 instance=ExtResource("4_dp014")]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1588599209]
 
-[node name="Area2D" type="Area2D" parent="CanvasLayer"]
+[node name="Area2D" type="Area2D" parent="CanvasLayer" unique_id=300759347]
 position = Vector2(-45, -3)
 script = ExtResource("5_e4eth")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/Area2D" unique_id=1489390633]
 position = Vector2(592, 843)
 scale = Vector2(513.137, 0.13158733)
 shape = SubResource("RectangleShape2D_ycdy4")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="CanvasLayer/Area2D"]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="CanvasLayer/Area2D" unique_id=1948341643]
 position = Vector2(629, -207)
 rotation = -3.14159
 scale = Vector2(1317.2429, 0.89298505)
 shape = SubResource("RectangleShape2D_w48qg")
 
-[node name="val" type="AudioStreamPlayer2D" parent="CanvasLayer/Area2D"]
+[node name="val" type="AudioStreamPlayer2D" parent="CanvasLayer/Area2D" unique_id=802068050]
 process_mode = 3
 position = Vector2(45, 3)
 stream = ExtResource("3_v1g7k")
 volume_db = 24.0
 
-[node name="menu" parent="." instance=ExtResource("7_6ypv4")]
+[node name="menu" parent="." unique_id=1411599507 instance=ExtResource("7_6ypv4")]
 
-[node name="startup" type="Node2D" parent="."]
+[node name="startup" type="Node2D" parent="." unique_id=1756461726]
 process_mode = 3
 position = Vector2(689, 24)
 
-[node name="CanvasLayer" type="CanvasLayer" parent="startup"]
+[node name="CanvasLayer" type="CanvasLayer" parent="startup" unique_id=1365745013]
 
-[node name="about" type="TouchScreenButton" parent="startup/CanvasLayer"]
+[node name="about" type="TouchScreenButton" parent="startup/CanvasLayer" unique_id=1292445553]
 process_mode = 3
 position = Vector2(176, 584)
 scale = Vector2(5, 5)
 texture_normal = SubResource("AtlasTexture_ghfoy")
 texture_pressed = SubResource("AtlasTexture_52hbn")
 
-[node name="Label" type="Label" parent="startup/CanvasLayer/about"]
+[node name="Label" type="Label" parent="startup/CanvasLayer/about" unique_id=1503715998]
 process_mode = 3
 offset_left = 3.2
 offset_top = 33.6
@@ -130,14 +130,14 @@ text = "About"
 script = ExtResource("10_h4frg")
 metadata/_edit_use_anchors_ = true
 
-[node name="start" type="TouchScreenButton" parent="startup/CanvasLayer"]
+[node name="start" type="TouchScreenButton" parent="startup/CanvasLayer" unique_id=1950276885]
 process_mode = 3
 position = Vector2(176, 336)
 scale = Vector2(5, 5)
 texture_normal = SubResource("AtlasTexture_oe6v4")
 texture_pressed = SubResource("AtlasTexture_kffll")
 
-[node name="Label" type="Label" parent="startup/CanvasLayer/start"]
+[node name="Label" type="Label" parent="startup/CanvasLayer/start" unique_id=310851407]
 process_mode = 3
 offset_left = 3.2
 offset_top = 33.6
@@ -149,7 +149,7 @@ theme_override_fonts/font = ExtResource("9_sc5u2")
 text = "Start"
 script = ExtResource("10_h4frg")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="startup/CanvasLayer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="startup/CanvasLayer" unique_id=1503027746]
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
@@ -163,11 +163,11 @@ grow_horizontal = 2
 grow_vertical = 0
 scale = Vector2(0.8049734, 0.8049734)
 
-[node name="foot" type="Node2D" parent="startup/CanvasLayer/HBoxContainer"]
+[node name="foot" type="Node2D" parent="startup/CanvasLayer/HBoxContainer" unique_id=1134886865]
 position = Vector2(329, -2)
 scale = Vector2(2.349, 2.349)
 
-[node name="ColorRect" type="ColorRect" parent="startup/CanvasLayer/HBoxContainer/foot"]
+[node name="ColorRect" type="ColorRect" parent="startup/CanvasLayer/HBoxContainer/foot" unique_id=1188178375]
 offset_left = -212.61418
 offset_top = 327.0614
 offset_right = -172.61517
@@ -175,16 +175,16 @@ offset_bottom = 367.0614
 scale = Vector2(7.64877, 5.27079)
 color = Color(0, 0, 0, 0.72156864)
 
-[node name="username" parent="startup/CanvasLayer/HBoxContainer/foot" instance=ExtResource("12_ycdy4")]
+[node name="username" parent="startup/CanvasLayer/HBoxContainer/foot" unique_id=1764797668 instance=ExtResource("12_ycdy4")]
 position = Vector2(-34.36987, 136.99844)
 scale = Vector2(0.247254, 0.247254)
 
-[node name="github" type="TouchScreenButton" parent="startup/CanvasLayer/HBoxContainer/foot"]
+[node name="github" type="TouchScreenButton" parent="startup/CanvasLayer/HBoxContainer/foot" unique_id=532725281]
 position = Vector2(-185.19199, 373.96497)
 scale = Vector2(0.934, 0.934)
 texture_normal = ExtResource("13_w48qg")
 
-[node name="Label2" type="Label" parent="startup/CanvasLayer/HBoxContainer/foot/github"]
+[node name="Label2" type="Label" parent="startup/CanvasLayer/HBoxContainer/foot/github" unique_id=1219052601]
 clip_contents = true
 offset_left = 36.7491
 offset_top = 8.768587
@@ -198,13 +198,13 @@ https://github.com/Divya-Darshan/eagle"
 justification_flags = 0
 metadata/_edit_use_anchors_ = true
 
-[node name="leaderboard" type="TouchScreenButton" parent="startup/CanvasLayer/HBoxContainer/foot"]
+[node name="leaderboard" type="TouchScreenButton" parent="startup/CanvasLayer/HBoxContainer/foot" unique_id=32005567]
 position = Vector2(-184.541, 343.62897)
 scale = Vector2(0.909212, 0.909212)
 texture_normal = SubResource("AtlasTexture_vivmo")
 texture_pressed = SubResource("AtlasTexture_2cqfq")
 
-[node name="Label4" type="Label" parent="startup/CanvasLayer/HBoxContainer/foot/leaderboard"]
+[node name="Label4" type="Label" parent="startup/CanvasLayer/HBoxContainer/foot/leaderboard" unique_id=128230725]
 clip_contents = true
 offset_left = 34.309948
 offset_top = 12.478495
@@ -217,13 +217,13 @@ text = " Leaderboard"
 justification_flags = 0
 metadata/_edit_use_anchors_ = true
 
-[node name="apk" type="TouchScreenButton" parent="startup/CanvasLayer/HBoxContainer/foot"]
+[node name="apk" type="TouchScreenButton" parent="startup/CanvasLayer/HBoxContainer/foot" unique_id=521070681]
 position = Vector2(-27.413792, 335.54626)
 scale = Vector2(0.46434772, 0.46434772)
 texture_normal = SubResource("AtlasTexture_yaehf")
 texture_pressed = SubResource("AtlasTexture_074og")
 
-[node name="Label5" type="Label" parent="startup/CanvasLayer/HBoxContainer/foot/apk"]
+[node name="Label5" type="Label" parent="startup/CanvasLayer/HBoxContainer/foot/apk" unique_id=2013360128]
 visible = false
 clip_contents = true
 offset_left = 36.7297
