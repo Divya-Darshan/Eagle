@@ -75,7 +75,7 @@ position_smoothing_enabled = true
 position_smoothing_speed = 10.0
 rotation_smoothing_enabled = true
 
-[node name="ParallaxBackground" type="Node2D" parent="." unique_id=2126684806 instance=ExtResource("4_sycqg")]
+[node name="ParallaxBackground" parent="." unique_id=2126684806 instance=ExtResource("4_sycqg")]
 
 [node name="coin" parent="." unique_id=1192421192 instance=ExtResource("4_dp014")]
 
@@ -112,7 +112,7 @@ position = Vector2(689, 24)
 
 [node name="about" type="TouchScreenButton" parent="startup/CanvasLayer" unique_id=1292445553]
 process_mode = 3
-position = Vector2(176, 584)
+position = Vector2(176, 527)
 scale = Vector2(5, 5)
 texture_normal = SubResource("AtlasTexture_ghfoy")
 texture_pressed = SubResource("AtlasTexture_52hbn")
@@ -132,7 +132,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="start" type="TouchScreenButton" parent="startup/CanvasLayer" unique_id=1950276885]
 process_mode = 3
-position = Vector2(176, 336)
+position = Vector2(176, 279)
 scale = Vector2(5, 5)
 texture_normal = SubResource("AtlasTexture_oe6v4")
 texture_pressed = SubResource("AtlasTexture_kffll")
