@@ -2,5 +2,3 @@
 .godot/
 /android/
 eagle.keystore
-encrypted_private_key.zip
-upload_certificate.pem
