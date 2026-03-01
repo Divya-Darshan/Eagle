@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://b7vosdhj0i52n"]
+[gd_scene format=3 uid="uid://b7vosdhj0i52n"]
 
 [ext_resource type="Script" uid="uid://d1l1pdx22xq0e" path="res://ui/menu/menu.gd" id="1_5uj2i"]
 [ext_resource type="Texture2D" uid="uid://bu785e03h8xx" path="res://icon/Metal Buttons Icons.png" id="2_0fc3w"]
@@ -55,10 +55,10 @@ region = Rect2(96, 224, 32, 32)
 atlas = ExtResource("2_0fc3w")
 region = Rect2(160, 224, 32, 32)
 
-[node name="menu" type="CanvasLayer" groups=["GameMenu"]]
+[node name="menu" type="CanvasLayer" unique_id=505217781 groups=["GameMenu"]]
 script = ExtResource("1_5uj2i")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=698723616]
 process_mode = 3
 visible = false
 self_modulate = Color(0, 0, 0, 0.529412)
@@ -68,7 +68,7 @@ offset_right = -48.0
 offset_bottom = -32.0
 scale = Vector2(17.9435, 36.3432)
 
-[node name="open" type="TouchScreenButton" parent="."]
+[node name="open" type="TouchScreenButton" parent="." unique_id=430244840]
 process_mode = 3
 position = Vector2(400, 16)
 scale = Vector2(2.34907, 2.34907)
@@ -76,7 +76,7 @@ texture_normal = SubResource("AtlasTexture_u6nv8")
 texture_pressed = SubResource("AtlasTexture_q06x7")
 passby_press = true
 
-[node name="close" type="TouchScreenButton" parent="."]
+[node name="close" type="TouchScreenButton" parent="." unique_id=1693127377]
 process_mode = 3
 visible = false
 position = Vector2(400, 16)
@@ -84,14 +84,14 @@ scale = Vector2(2.349, 2.349)
 texture_normal = SubResource("AtlasTexture_r0u7i")
 texture_pressed = SubResource("AtlasTexture_0pj3s")
 
-[node name="reset" type="TouchScreenButton" parent="close"]
+[node name="reset" type="TouchScreenButton" parent="close" unique_id=882536075]
 process_mode = 3
 position = Vector2(-163.474, 122.18)
 scale = Vector2(1.5, 1.5)
 texture_normal = SubResource("AtlasTexture_hfvcl")
 texture_pressed = SubResource("AtlasTexture_fm3el")
 
-[node name="Label" type="Label" parent="close/reset"]
+[node name="Label" type="Label" parent="close/reset" unique_id=687844531]
 offset_left = 0.567617
 offset_top = -6.52743
 offset_right = 49.5676
@@ -102,14 +102,14 @@ theme_override_fonts/font = ExtResource("3_iiwfg")
 text = "Restart"
 metadata/_edit_use_anchors_ = true
 
-[node name="resume" type="TouchScreenButton" parent="close"]
+[node name="resume" type="TouchScreenButton" parent="close" unique_id=1266345203]
 process_mode = 3
 position = Vector2(-163.474, 57.897)
 scale = Vector2(1.5, 1.5)
 texture_normal = SubResource("AtlasTexture_t8i6k")
 texture_pressed = SubResource("AtlasTexture_ly41m")
 
-[node name="Label" type="Label" parent="close/resume"]
+[node name="Label" type="Label" parent="close/resume" unique_id=1475392372]
 offset_left = 1.13523
 offset_top = -9.08189
 offset_right = 45.1352
@@ -120,7 +120,7 @@ theme_override_fonts/font = ExtResource("3_iiwfg")
 text = "Resume"
 metadata/_edit_use_anchors_ = true
 
-[node name="HBoxContainer" type="HBoxContainer" parent="close"]
+[node name="HBoxContainer" type="HBoxContainer" parent="close" unique_id=2053716443]
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
@@ -134,11 +134,11 @@ grow_horizontal = 2
 grow_vertical = 0
 scale = Vector2(0.51116, 0.51116)
 
-[node name="foot" type="Node2D" parent="close/HBoxContainer"]
+[node name="foot" type="Node2D" parent="close/HBoxContainer" unique_id=13096693]
 position = Vector2(329, -2)
 scale = Vector2(2.349, 2.349)
 
-[node name="ColorRect" type="ColorRect" parent="close/HBoxContainer/foot"]
+[node name="ColorRect" type="ColorRect" parent="close/HBoxContainer/foot" unique_id=817732242]
 offset_left = -213.332
 offset_top = 328.08
 offset_right = -173.333
@@ -146,16 +146,16 @@ offset_bottom = 368.08
 scale = Vector2(7.64877, 5.27079)
 color = Color(0.18359, 0.18359, 0.18359, 0.811765)
 
-[node name="username" parent="close/HBoxContainer/foot" instance=ExtResource("5_n3nrh")]
+[node name="username" parent="close/HBoxContainer/foot" unique_id=552422397 instance=ExtResource("5_n3nrh")]
 position = Vector2(-80.4952, 136.99844)
 scale = Vector2(0.247254, 0.247254)
 
-[node name="github" type="TouchScreenButton" parent="close/HBoxContainer/foot"]
+[node name="github" type="TouchScreenButton" parent="close/HBoxContainer/foot" unique_id=1406341162]
 position = Vector2(-132.196, 382.90063)
 scale = Vector2(0.934, 0.934)
 texture_normal = ExtResource("4_nnyul")
 
-[node name="Label2" type="Label" parent="close/HBoxContainer/foot/github"]
+[node name="Label2" type="Label" parent="close/HBoxContainer/foot/github" unique_id=562663516]
 clip_contents = true
 offset_left = 36.7491
 offset_top = 10.3115
@@ -169,13 +169,13 @@ https://github.com/Divya-Darshan/eagle"
 justification_flags = 0
 metadata/_edit_use_anchors_ = true
 
-[node name="leaderboard" type="TouchScreenButton" parent="close/HBoxContainer/foot"]
+[node name="leaderboard" type="TouchScreenButton" parent="close/HBoxContainer/foot" unique_id=2024061288]
 position = Vector2(-131.545, 352.56464)
 scale = Vector2(0.909212, 0.909212)
 texture_normal = SubResource("AtlasTexture_cvn6q")
 texture_pressed = SubResource("AtlasTexture_g4ibq")
 
-[node name="Label4" type="Label" parent="close/HBoxContainer/foot/leaderboard"]
+[node name="Label4" type="Label" parent="close/HBoxContainer/foot/leaderboard" unique_id=1926426454]
 clip_contents = true
 offset_left = 34.309948
 offset_top = 12.478495
@@ -188,13 +188,13 @@ text = " Leaderboard"
 justification_flags = 0
 metadata/_edit_use_anchors_ = true
 
-[node name="apk" type="TouchScreenButton" parent="close/HBoxContainer/foot"]
-position = Vector2(-63.476814, 335.54626)
+[node name="apk" type="TouchScreenButton" parent="close/HBoxContainer/foot" unique_id=889611227]
+position = Vector2(-79.7861, 335.54626)
 scale = Vector2(0.46434772, 0.46434772)
 texture_normal = SubResource("AtlasTexture_763jh")
 texture_pressed = SubResource("AtlasTexture_fra63")
 
-[node name="Label5" type="Label" parent="close/HBoxContainer/foot/apk"]
+[node name="Label5" type="Label" parent="close/HBoxContainer/foot/apk" unique_id=1835825020]
 visible = false
 clip_contents = true
 offset_left = 36.7297
@@ -208,7 +208,7 @@ text = "🟢 Update APK for
      latest updates"
 justification_flags = 0
 
-[node name="goon" parent="close" instance=ExtResource("6_ah353")]
+[node name="goon" parent="close" unique_id=484620503 instance=ExtResource("6_ah353")]
 visible = false
 offset_left = -160.068
 offset_top = 183.908

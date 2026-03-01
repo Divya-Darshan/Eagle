@@ -240,3 +240,5 @@ justification_flags = 0
 [connection signal="body_entered" from="CanvasLayer/Area2D" to="CanvasLayer/Area2D" method="_on_body_entered"]
 [connection signal="pressed" from="startup/CanvasLayer/about" to="." method="_on_about_pressed"]
 [connection signal="pressed" from="startup/CanvasLayer/start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="startup/CanvasLayer/HBoxContainer/foot/github" to="." method="_on_github_pressed"]
+[connection signal="pressed" from="startup/CanvasLayer/HBoxContainer/foot/leaderboard" to="." method="_on_leaderboard_pressed"]

@@ -80,3 +80,11 @@ func _on_start_pressed() -> void:
 
 func _on_about_pressed() -> void:
 	OS.shell_open("https://github.com/Divya-Darshan/Eagle/blob/main/README.md")
+
+
+func _on_github_pressed() -> void:
+	OS.shell_open("https://github.com/Divya-Darshan/Eagle")
+
+
+func _on_leaderboard_pressed() -> void:
+	OS.shell_open("https://eagle-score.onrender.com")
