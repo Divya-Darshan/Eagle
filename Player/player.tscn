@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://c6g18e2vqf0b7"]
+[gd_scene format=3 uid="uid://c6g18e2vqf0b7"]
 
 [ext_resource type="Script" uid="uid://coi7vxptabtth" path="res://gd/player.gd" id="1_jnjht"]
 [ext_resource type="Texture2D" uid="uid://bcfqy1f1jv3p4" path="res://Player/StyleBird1/Bird1-3.png" id="2_gwnis"]
@@ -43,38 +43,110 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_od3ui")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k53q1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fhl08")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vtle1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_od3ui")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k53q1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fhl08")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vtle1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_od3ui")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k53q1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fhl08")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vtle1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_od3ui")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k53q1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fhl08")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vtle1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_od3ui")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k53q1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fhl08")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vtle1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_od3ui")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k53q1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fhl08")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vtle1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_od3ui")
 }],
-"loop": false,
+"loop": true,
 "name": &"fly",
 "speed": 10.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_hgm8q"]
-radius = 3.0541446
+radius = 2.8550453
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1166337085]
 scale = Vector2(6.7901077, 6.7901077)
 script = ExtResource("1_jnjht")
 
-[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=859158960]
 texture_filter = 1
 position = Vector2(0.352256, -0.733002)
 scale = Vector2(0.4315442, 0.4237897)
 sprite_frames = SubResource("SpriteFrames_0xfyy")
 animation = &"fly"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=90665677]
 position = Vector2(0.24956079, -0.24956077)
 rotation = -1.54877
 scale = Vector2(0.73885953, -0.72598696)
 shape = SubResource("CircleShape2D_hgm8q")
 
-[node name="val" type="AudioStreamPlayer2D" parent="."]
+[node name="val" type="AudioStreamPlayer2D" parent="." unique_id=674121148]
 position = Vector2(0.00702408, 1.68362)
 stream = ExtResource("3_1b3fl")
 volume_db = 24.0
 
-[node name="ya" type="AudioStreamPlayer2D" parent="."]
+[node name="ya" type="AudioStreamPlayer2D" parent="." unique_id=77805782]
 position = Vector2(0.00702408, 1.68362)
 stream = ExtResource("3_ggbhd")
 volume_db = 24.0

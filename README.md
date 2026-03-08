@@ -1,7 +1,7 @@
 # 🦅 **Eagle – A Fast & Fun Flappy Bird Style Game**
 
 Welcome to **Eagle**, a lightweight and fast-paced **Flappy Bird–inspired game AKA Parody** built using **Godot 4.3**.  
-Tap, flap, dodge, survive — and compete to get the highest score!
+Tap, flap, dodge, survive  and compete to get the highest score!
 
 ---
 
@@ -42,7 +42,7 @@ Tap, flap, dodge, survive — and compete to get the highest score!
 
 <div align="center">
 
-![Gameplay Screenshot](./img/test.png)
+![Gameplay Screenshot](./img/main.png)
 
 </div>
 
@@ -86,14 +86,7 @@ Perfect for:
 
 ---
 
-## 🗺️ **Future Plans**
-- 🎵 Music & sound effects  
-- 🌍 Online leaderboard  
-- 🦅 Unlockable bird skins  
-- 🌫️ Particle effects  
-- 💾 Cloud save  
 
----
 
 # Screenshots
 
