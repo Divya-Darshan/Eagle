@@ -1,21 +1,21 @@
-[gd_scene load_steps=6 format=3 uid="uid://da8iu04wpmkii"]
+[gd_scene format=3 uid="uid://da8iu04wpmkii"]
 
 [ext_resource type="Script" uid="uid://c0l7q5ta8sfx8" path="res://Tiles/pole.gd" id="1_nl635"]
 [ext_resource type="Texture2D" uid="uid://b07k3lrp011pa" path="res://Tiles/Style 1/PipeStyle1.png" id="1_unko7"]
-[ext_resource type="AudioStream" uid="uid://pb16ovmclmar" path="res://sfx/ahhhh.mp3" id="3_fg4mt"]
+[ext_resource type="AudioStream" uid="uid://g2fe1yggm3ua" path="res://sfx/fa.mp3" id="3_7b02l"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1pac1"]
 size = Vector2(30.7988, 19.0986)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qn1vm"]
 
-[node name="poll" type="Area2D"]
+[node name="poll" type="Area2D" unique_id=1494799807]
 scale = Vector2(1.3309, 1.3309)
 script = ExtResource("1_nl635")
 
-[node name="polesprites" type="Node2D" parent="."]
+[node name="polesprites" type="Node2D" parent="." unique_id=957836927]
 
-[node name="PipeStyle1" type="Sprite2D" parent="polesprites"]
+[node name="PipeStyle1" type="Sprite2D" parent="polesprites" unique_id=471648482]
 texture_filter = 1
 position = Vector2(-0.968643, 0.55879194)
 scale = Vector2(2.11498, 2.11498)
@@ -23,7 +23,7 @@ texture = ExtResource("1_unko7")
 region_enabled = true
 region_rect = Rect2(-0.514587, 0, 32.5665, 60.5923)
 
-[node name="PipeStyle2" type="Sprite2D" parent="polesprites"]
+[node name="PipeStyle2" type="Sprite2D" parent="polesprites" unique_id=937483723]
 texture_filter = 1
 position = Vector2(-0.968643, 95)
 scale = Vector2(2.11498, 2.11498)
@@ -31,7 +31,7 @@ texture = ExtResource("1_unko7")
 region_enabled = true
 region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
 
-[node name="PipeStyle3" type="Sprite2D" parent="polesprites"]
+[node name="PipeStyle3" type="Sprite2D" parent="polesprites" unique_id=760811968]
 texture_filter = 1
 position = Vector2(-0.968643, 169)
 scale = Vector2(2.11498, 2.11498)
@@ -39,7 +39,7 @@ texture = ExtResource("1_unko7")
 region_enabled = true
 region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
 
-[node name="PipeStyle4" type="Sprite2D" parent="polesprites"]
+[node name="PipeStyle4" type="Sprite2D" parent="polesprites" unique_id=115604668]
 texture_filter = 1
 position = Vector2(-0.968643, 234)
 scale = Vector2(2.11498, 2.11498)
@@ -47,7 +47,7 @@ texture = ExtResource("1_unko7")
 region_enabled = true
 region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
 
-[node name="PipeStyle5" type="Sprite2D" parent="polesprites"]
+[node name="PipeStyle5" type="Sprite2D" parent="polesprites" unique_id=462865607]
 texture_filter = 1
 position = Vector2(-0.968643, 305)
 scale = Vector2(2.11498, 2.11498)
@@ -55,7 +55,7 @@ texture = ExtResource("1_unko7")
 region_enabled = true
 region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
 
-[node name="PipeStyle6" type="Sprite2D" parent="polesprites"]
+[node name="PipeStyle6" type="Sprite2D" parent="polesprites" unique_id=1232386651]
 texture_filter = 1
 position = Vector2(-0.968643, 376.99997)
 scale = Vector2(2.11498, 2.11498)
@@ -63,7 +63,7 @@ texture = ExtResource("1_unko7")
 region_enabled = true
 region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
 
-[node name="PipeStyle7" type="Sprite2D" parent="polesprites"]
+[node name="PipeStyle7" type="Sprite2D" parent="polesprites" unique_id=1234792125]
 texture_filter = 1
 position = Vector2(-0.968643, 447.99997)
 scale = Vector2(2.11498, 2.11498)
@@ -71,7 +71,7 @@ texture = ExtResource("1_unko7")
 region_enabled = true
 region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
 
-[node name="PipeStyle8" type="Sprite2D" parent="polesprites"]
+[node name="PipeStyle8" type="Sprite2D" parent="polesprites" unique_id=87497344]
 texture_filter = 1
 position = Vector2(-0.968643, 518)
 scale = Vector2(2.11498, 2.11498)
@@ -79,7 +79,7 @@ texture = ExtResource("1_unko7")
 region_enabled = true
 region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
 
-[node name="PipeStyle9" type="Sprite2D" parent="polesprites"]
+[node name="PipeStyle9" type="Sprite2D" parent="polesprites" unique_id=1674358005]
 texture_filter = 1
 position = Vector2(-0.968643, 591)
 scale = Vector2(2.11498, 2.11498)
@@ -87,7 +87,7 @@ texture = ExtResource("1_unko7")
 region_enabled = true
 region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
 
-[node name="PipeStyle10" type="Sprite2D" parent="polesprites"]
+[node name="PipeStyle10" type="Sprite2D" parent="polesprites" unique_id=124941807]
 texture_filter = 1
 position = Vector2(-0.968643, 659)
 scale = Vector2(2.11498, 2.11498)
@@ -95,7 +95,7 @@ texture = ExtResource("1_unko7")
 region_enabled = true
 region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
 
-[node name="PipeStyle11" type="Sprite2D" parent="polesprites"]
+[node name="PipeStyle11" type="Sprite2D" parent="polesprites" unique_id=1807849582]
 texture_filter = 1
 position = Vector2(-0.968643, 732)
 scale = Vector2(2.11498, 2.11498)
@@ -103,7 +103,7 @@ texture = ExtResource("1_unko7")
 region_enabled = true
 region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
 
-[node name="PipeStyle14" type="Sprite2D" parent="polesprites"]
+[node name="PipeStyle14" type="Sprite2D" parent="polesprites" unique_id=1492926960]
 texture_filter = 1
 position = Vector2(-0.968643, 898)
 scale = Vector2(2.11498, 2.11498)
@@ -111,7 +111,7 @@ texture = ExtResource("1_unko7")
 region_enabled = true
 region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
 
-[node name="PipeStyle15" type="Sprite2D" parent="polesprites"]
+[node name="PipeStyle15" type="Sprite2D" parent="polesprites" unique_id=1232887034]
 texture_filter = 1
 position = Vector2(-0.968643, 1002)
 scale = Vector2(2.11498, 2.11498)
@@ -119,7 +119,7 @@ texture = ExtResource("1_unko7")
 region_enabled = true
 region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
 
-[node name="PipeStyle17" type="Sprite2D" parent="polesprites"]
+[node name="PipeStyle17" type="Sprite2D" parent="polesprites" unique_id=71171628]
 texture_filter = 1
 position = Vector2(-0.968643, 1058)
 scale = Vector2(2.11498, 2.11498)
@@ -127,7 +127,7 @@ texture = ExtResource("1_unko7")
 region_enabled = true
 region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
 
-[node name="PipeStyle18" type="Sprite2D" parent="polesprites"]
+[node name="PipeStyle18" type="Sprite2D" parent="polesprites" unique_id=1421980530]
 texture_filter = 1
 position = Vector2(-0.968643, 1109)
 scale = Vector2(2.11498, 2.11498)
@@ -135,7 +135,7 @@ texture = ExtResource("1_unko7")
 region_enabled = true
 region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
 
-[node name="PipeStyle16" type="Sprite2D" parent="polesprites"]
+[node name="PipeStyle16" type="Sprite2D" parent="polesprites" unique_id=1188150109]
 texture_filter = 1
 position = Vector2(-0.968643, 943)
 scale = Vector2(2.11498, 2.11498)
@@ -143,7 +143,7 @@ texture = ExtResource("1_unko7")
 region_enabled = true
 region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
 
-[node name="PipeStyle13" type="Sprite2D" parent="polesprites"]
+[node name="PipeStyle13" type="Sprite2D" parent="polesprites" unique_id=1223286848]
 texture_filter = 1
 position = Vector2(-0.968643, 839)
 scale = Vector2(2.11498, 2.11498)
@@ -151,7 +151,7 @@ texture = ExtResource("1_unko7")
 region_enabled = true
 region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
 
-[node name="PipeStyle12" type="Sprite2D" parent="polesprites"]
+[node name="PipeStyle12" type="Sprite2D" parent="polesprites" unique_id=1035086458]
 texture_filter = 1
 position = Vector2(-0.968643, 790.99994)
 scale = Vector2(2.11498, 2.11498)
@@ -159,27 +159,28 @@ texture = ExtResource("1_unko7")
 region_enabled = true
 region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1986776198]
 position = Vector2(-0.751371, 520.7)
 scale = Vector2(2.28371, -61.0801)
 shape = SubResource("RectangleShape2D_1pac1")
 
-[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="." unique_id=1853675026]
 position = Vector2(132, -319)
 scale = Vector2(0.53338, 14.1142)
 
-[node name="coin adder" type="Area2D" parent="."]
+[node name="coin adder" type="Area2D" parent="." unique_id=1932485998]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="coin adder"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="coin adder" unique_id=1571683453]
 position = Vector2(25, -300)
 scale = Vector2(0.424466, 23.1897)
 shape = SubResource("RectangleShape2D_qn1vm")
 
-[node name="ahhh" type="AudioStreamPlayer2D" parent="."]
+[node name="ahhh" type="AudioStreamPlayer2D" parent="." unique_id=979090334]
 process_mode = 3
-stream = ExtResource("3_fg4mt")
-volume_db = 24.0
+stream = ExtResource("3_7b02l")
+volume_db = 16.687
 max_distance = 4430.0
+attenuation = 0.5946034
 panning_strength = 1.39
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

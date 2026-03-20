@@ -1,9 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://c6g18e2vqf0b7"]
+[gd_scene format=3 uid="uid://c6g18e2vqf0b7"]
 
 [ext_resource type="Script" uid="uid://coi7vxptabtth" path="res://gd/player.gd" id="1_jnjht"]
 [ext_resource type="Texture2D" uid="uid://bcfqy1f1jv3p4" path="res://Player/StyleBird1/Bird1-3.png" id="2_gwnis"]
-[ext_resource type="AudioStream" uid="uid://bopqtmyhkfow0" path="res://sfx/val_A01.mp3" id="3_1b3fl"]
 [ext_resource type="AudioStream" uid="uid://bkv8sy1rcil8u" path="res://sfx/yamete.mp3" id="3_ggbhd"]
+[ext_resource type="AudioStream" uid="uid://dgl6rg5kht3cp" path="res://sfx/edapom.mp3" id="3_gwnis"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k53q1"]
 atlas = ExtResource("2_gwnis")
@@ -52,29 +52,29 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_hgm8q"]
 radius = 3.0541446
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1600702534]
 scale = Vector2(6.7901077, 6.7901077)
 script = ExtResource("1_jnjht")
 
-[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=1196974783]
 texture_filter = 1
 position = Vector2(0.352256, -0.733002)
 scale = Vector2(0.4315442, 0.4237897)
 sprite_frames = SubResource("SpriteFrames_0xfyy")
 animation = &"fly"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1020628122]
 position = Vector2(0.24956079, -0.24956077)
 rotation = -1.54877
 scale = Vector2(0.73885953, -0.72598696)
 shape = SubResource("CircleShape2D_hgm8q")
 
-[node name="val" type="AudioStreamPlayer2D" parent="."]
+[node name="val" type="AudioStreamPlayer2D" parent="." unique_id=482997778]
 position = Vector2(0.00702408, 1.68362)
-stream = ExtResource("3_1b3fl")
+stream = ExtResource("3_gwnis")
 volume_db = 24.0
 
-[node name="ya" type="AudioStreamPlayer2D" parent="."]
+[node name="ya" type="AudioStreamPlayer2D" parent="." unique_id=1652418914]
 position = Vector2(0.00702408, 1.68362)
 stream = ExtResource("3_ggbhd")
 volume_db = 24.0
