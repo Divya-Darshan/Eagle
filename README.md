@@ -118,4 +118,4 @@ If you’d like to improve visuals, UI, or gameplay, feel free to contribute.
 ---
 
 ## ⭐ Support the Project
-If you enjoy the game, **please star the repo** — it really helps and motivates further development!;D
+If you enjoy the game, **please star the repo** it really helps and motivates further development! ;D
