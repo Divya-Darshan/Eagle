@@ -39,7 +39,7 @@ Tap, flap, dodge, survive  and compete to get the highest score!
 
 ### 🫂 **Privacy Policy**
 
-<a href="https://github.com/Divya-Darshan/eagle_server">
+<a href="https://divya-darshan.github.io/Eagle/">
   <img src="https://img.shields.io/badge/Privacy%20Policy-6F42C1?style=for-the-badge&logo=github&logoColor=white&labelColor=0A0A0A&color=1C7CFF" height="65"/>
 </a>
 
