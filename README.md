@@ -11,9 +11,11 @@ Tap, flap, dodge, survive  and compete to get the highest score!
 
 ### 🚀 **Download Eagle for Android**
 
-<a href="https://github.com/Divya-Darshan/Eagle/raw/refs/heads/main/app/eagle.apk">
-  <img src="https://img.shields.io/badge/Download%20APK-2abaf6?style=for-the-badge&logo=android&logoColor=white&labelColor=0A0A0A&color=6acaf6" height="65"/>
+<a href="https://play.google.com/store/apps/details?id=com.darshni.eagle&pcampaignid=web_share">
+  <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" height="110"/>
 </a>
+
+
 
 <br><br>
 
