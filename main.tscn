@@ -57,10 +57,6 @@ script = ExtResource("1_yjt1p")
 [node name="sender" type="Node" parent="." unique_id=672891230]
 script = ExtResource("2_w3dpg")
 
-[node name="Label" type="Label" parent="sender" unique_id=2136051185]
-offset_right = 40.0
-offset_bottom = 23.0
-
 [node name="HTTPRequest" type="HTTPRequest" parent="sender" unique_id=1134004881]
 
 [node name="CharacterBody2D" parent="." unique_id=1733611020 instance=ExtResource("1_cpyrx")]
@@ -87,13 +83,13 @@ script = ExtResource("5_e4eth")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/Area2D" unique_id=1489390633]
 position = Vector2(592, 843)
-scale = Vector2(513.137, 0.13158733)
+scale = Vector2(3686178600, -5.2050843)
 shape = SubResource("RectangleShape2D_ycdy4")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="CanvasLayer/Area2D" unique_id=1948341643]
-position = Vector2(629, -207)
+position = Vector2(626, -219.00002)
 rotation = -3.14159
-scale = Vector2(1317.2429, 0.89298505)
+scale = Vector2(1325198, 2.146)
 shape = SubResource("RectangleShape2D_w48qg")
 
 [node name="val" type="AudioStreamPlayer2D" parent="CanvasLayer/Area2D" unique_id=802068050]

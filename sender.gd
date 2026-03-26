@@ -4,7 +4,7 @@ extends Node
 @onready var COINS_PATH := "user://coins.save"
 var username: String = ""
 var coins: float = 0.0
-
+var last_sent_score: float = -1.0
 
 func _ready() -> void:
 	load_data()
@@ -15,7 +15,7 @@ func _ready() -> void:
 		push_error("❌ ERROR: HTTPRequest node not found!")
 		return
 
-	# ✅ Start repeating timer (every 5 seconds)
+	# Start repeating timer (every 5 seconds)
 	var timer := Timer.new()
 	timer.wait_time = 5.0
 	timer.autostart = true
@@ -23,18 +23,23 @@ func _ready() -> void:
 	add_child(timer)
 	timer.timeout.connect(_on_send_timer)
 
-	print("✅ Auto sending every 5 seconds started!")
 
 
-# ✅ Called every 5 seconds
+# every time the value changes
 func _on_send_timer() -> void:
-	load_data()  # update latest score from file
-	send_to_server(username, coins)
+	load_data()
+
+	# only send if score changed
+	if coins != last_sent_score:
+		last_sent_score = coins
+		send_to_server(username, coins)
+	else:
+		print("Score unchanged, not sending")
 
 
 
 
-# ✅ Load username + coins (fixed coins loading)
+# Load username + coins (fixed coins loading)
 # -------------------------------------------------------
 func load_data() -> void:
 	# Username
@@ -53,14 +58,19 @@ func load_data() -> void:
 			coins = float(val)
 		else:
 			coins = 0.0 # fallback if type unexpected
-		print("✅ Loaded Score:", coins)
+
+		print("Loaded Score:", coins)
+		print("======================\n")
 	else:
 		coins = 0.0
 		print("❌ Coins file not found. Defaulting to 0.0")
-	print("✅ Loaded Username:", username)
+
+	print("Loaded Username:", username)
+	print("======================\n")
+
 
 # -------------------------------------------------------
-# ✅ Send to Python server
+# Send to Python server
 # -------------------------------------------------------
 func send_to_server(username: String, score: float) -> void:
 
@@ -76,14 +86,16 @@ func send_to_server(username: String, score: float) -> void:
 			json_body
 		)
 		if err != OK:
-			print("❌ HTTP Request Error:", err)
+
+			print("❌ HTTP Request Error: ", err)
+			print("======================\n")
 		else:
-			print("📡 Sending to server:", json_body)
 
+			print(" Sending to server: ", json_body)
+			print("======================\n")
 
-# -------------------------------------------------------
-# ✅ Server Response
-# -------------------------------------------------------
 func _on_request_completed(result: int, response_code: int, headers: Array, body: PackedByteArray) -> void:
 	var text: String = body.get_string_from_utf8()
-	print("✅ Server Response:", response_code, text)
+
+	print("Server Response:", response_code, text)
+	print("======================\n")
