@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://0asph0ldn3st" path="res://icon/github.png" id="4_nnyul"]
 [ext_resource type="PackedScene" uid="uid://6hkxahqm8o68" path="res://user/username.tscn" id="5_n3nrh"]
 [ext_resource type="PackedScene" uid="uid://bpd2k7admpsvk" path="res://sfx/goon.tscn" id="6_ah353"]
+[ext_resource type="Script" uid="uid://0jwy0vyss0v1" path="res://ui/menu/fectch.gd" id="6_pjjyy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_u6nv8"]
 atlas = ExtResource("2_0fc3w")
@@ -60,7 +61,6 @@ script = ExtResource("1_5uj2i")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=698723616]
 process_mode = 3
-visible = false
 self_modulate = Color(0, 0, 0, 0.529412)
 offset_left = -88.0
 offset_top = -72.0
@@ -70,7 +70,7 @@ scale = Vector2(17.9435, 36.3432)
 
 [node name="open" type="TouchScreenButton" parent="." unique_id=430244840]
 process_mode = 3
-position = Vector2(400, 16)
+position = Vector2(400, 12)
 scale = Vector2(2.34907, 2.34907)
 texture_normal = SubResource("AtlasTexture_u6nv8")
 texture_pressed = SubResource("AtlasTexture_q06x7")
@@ -78,7 +78,6 @@ passby_press = true
 
 [node name="close" type="TouchScreenButton" parent="." unique_id=1693127377]
 process_mode = 3
-visible = false
 position = Vector2(400, 16)
 scale = Vector2(2.349, 2.349)
 texture_normal = SubResource("AtlasTexture_r0u7i")
@@ -208,6 +207,23 @@ text = "🟢 Update APK for
      latest updates"
 justification_flags = 0
 
+[node name="fectch" type="Node2D" parent="close/HBoxContainer" unique_id=1165269717]
+script = ExtResource("6_pjjyy")
+
+[node name="HTTPRequest" type="HTTPRequest" parent="close/HBoxContainer/fectch" unique_id=1051932250]
+
+[node name="Timer" type="Timer" parent="close/HBoxContainer/fectch" unique_id=2058332963]
+
+[node name="leader" type="Label" parent="close/HBoxContainer/fectch" unique_id=915420081]
+offset_left = 178.2273
+offset_top = 257.34653
+offset_right = 678.2273
+offset_bottom = 1257.3466
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.537255)
+theme_override_fonts/font = ExtResource("3_iiwfg")
+text = "Loading..."
+metadata/_edit_use_anchors_ = true
+
 [node name="goon" parent="close" unique_id=484620503 instance=ExtResource("6_ah353")]
 visible = false
 offset_left = -160.068
@@ -217,6 +233,7 @@ offset_bottom = 215.908
 scale = Vector2(1.40333, 1.40333)
 
 [connection signal="pressed" from="open" to="." method="_on_open_pressed"]
+[connection signal="pressed" from="open" to="close/HBoxContainer/fectch" method="_on_open_pressed"]
 [connection signal="pressed" from="close" to="." method="_on_close_pressed"]
 [connection signal="pressed" from="close/reset" to="." method="_on_reset_pressed"]
 [connection signal="pressed" from="close/resume" to="." method="_on_resume_pressed"]
