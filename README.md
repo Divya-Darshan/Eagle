@@ -98,7 +98,7 @@ Perfect for:
 ---
 
 ## 🔧 **Built With**
-- **Godot 4.3**
+- **Godot**
 - **GDScript**
 
 ---
