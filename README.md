@@ -12,11 +12,11 @@ Tap, flap, dodge, survive  and compete to get the highest score!
 ### 🚀 **Download Eagle for Android**
 
 <a href="https://play.google.com/store/apps/details?id=com.darshni.eagle&pcampaignid=web_share">
-  <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" height="110"/>
+  <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" height="100"/>
 </a>
 
 
-### 🏆 **View Online Leaderboard**
+### 🏆 **Online Leaderboard**
 
 <a href="https://eagle-score.onrender.com/">
   <img src="https://img.shields.io/badge/View%20Leaderboard-FF7A00?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=0A0A0A&color=FF7A00" height="65"/>
