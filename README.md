@@ -95,13 +95,13 @@ Built using **Godot** with **GDScript**, keeping the game lightweight, smooth, a
 
 ## Screenshots
 
-<div align="center" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; max-width: 800px; margin: auto;">
-  <img src="./img/1.jpg" style="width:100%; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.15);" />
-  <img src="./img/7.jpg" style="width:100%; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.15);" />
-  <img src="./img/2.jpg" style="width:100%; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.15);" />
-  <img src="./img/4.jpg" style="width:100%; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.15);" />
-  <img src="./img/5.jpg" style="width:100%; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.15);" />
-  <img src="./img/6.jpg" style="width:100%; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.15);" />
+<div align="center">
+  <img src="./img/1.jpg" width="350"/> 
+  <img src="./img/7.jpg" width="350"/> 
+  <img src="./img/2.jpg" width="350"/> 
+  <img src="./img/4.jpg" width="350"/> 
+  <img src="./img/5.jpg" width="350"/> 
+  <img src="./img/6.jpg" width="350"/> 
 </div>
 
 ---
