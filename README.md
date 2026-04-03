@@ -5,7 +5,6 @@ Tap, flap, dodge, survive  and compete to get the highest score!
 
 ---
 
-## ✅ **Download the Game**
 
 <div align="center">
 
@@ -70,59 +69,49 @@ Tap, flap, dodge, survive  and compete to get the highest score!
 </div>
 
 ---
+## Eagle – A Fast, Addictive Arcade Game
 
-## 🎯 **About the Game**
+**Eagle** is a lightweight, fast-paced arcade game inspired by classic tap-to-fly mechanics. You control a small eagle navigating through endless obstacles, where timing and reflexes are everything. The longer you survive, the faster the game gets, making each run more intense than the last.
 
-**Eagle** is a simple yet addictive tap-to-fly arcade game.  
-You control a tiny eagle trying to pass through endless pipes while the game becomes **faster and harder** over time.
-
-Perfect for:
-- quick play sessions  
-- testing reflexes  
-- beating your own high score  
-- challenging your friends  
+It’s designed for quick sessions but has that “just one more try” feeling that keeps you coming back.
 
 ---
 
-## 🕹️ **How to Play**
+## How It Plays
 
-### **Mobile**
-- Tap anywhere → flap upward  
-- Avoid pipes  
-- Survive as long as you can
+On mobile, you simply tap anywhere on the screen to keep the eagle in the air.  
+On PC, you can use the **Space** or **Enter** key to do the same.
 
-### **PC**
-- Press **Space** or **Enter** to flap  
-- Same rules — don’t crash!
+The goal is straightforward: avoid the pipes and stay alive as long as possible.  
+There are no complicated mechanics, just pure reaction and rhythm.
 
 ---
 
-## 🔧 **Built With**
-- **Godot**
-- **GDScript**
+## Tech Stack
+
+Built using **Godot** with **GDScript**, keeping the game lightweight, smooth, and easy to expand.
 
 ---
 
+## Screenshots
 
-
-# Screenshots
-
-<div align="center">
-  <img src="./img/1.jpg" width="350"/> 
-  <img src="./img/7.jpg" width="350"/> 
-  <img src="./img/2.jpg" width="350"/>  
-  <img src="./img/4.jpg" width="350"/> 
-  <img src="./img/5.jpg" width="350"/> 
-  <img src="./img/6.jpg" width="350"/> 
+<div align="center" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; max-width: 800px; margin: auto;">
+  <img src="./img/1.jpg" style="width:100%; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.15);" />
+  <img src="./img/7.jpg" style="width:100%; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.15);" />
+  <img src="./img/2.jpg" style="width:100%; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.15);" />
+  <img src="./img/4.jpg" style="width:100%; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.15);" />
+  <img src="./img/5.jpg" style="width:100%; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.15);" />
+  <img src="./img/6.jpg" style="width:100%; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.15);" />
 </div>
 
 ---
 
-## 🤝 **Contributing**
-Pull requests are welcome!  <3
-If you’d like to improve visuals, UI, or gameplay, feel free to contribute.
+## Contributing
+
+If you have ideas to improve gameplay, visuals, or overall feel, feel free to open a pull request. Small tweaks or big changes, everything is welcome.
 
 ---
 
-## ⭐ Support the Project
-If you enjoy the game, **please star the repo** it really helps and motivates further development! ;D
+## Support
+
+If you enjoyed the game, consider starring the repository. It genuinely helps and keeps the project moving forward.
