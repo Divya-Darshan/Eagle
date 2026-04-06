@@ -64,14 +64,8 @@ func _on_request_completed(result: int, _response_code: int, _headers: Array, bo
 	update_leaderboard_label()
 
 func update_leaderboard_label() -> void:
-	var time_str = Time.get_time_string_from_system()
 	var text = ""
-	
-	text += " LIVE LEADERBOARD \n"
-	text += "===================\n"
-	text += "Updated: " + time_str + "\n"
-	text += "===================\n\n"
-	
+
 	if top_players.size() == 0:
 		text += "No players yet\n"
 	else:
@@ -80,6 +74,5 @@ func update_leaderboard_label() -> void:
 			if player is Dictionary:
 				text += "  " + str(i+1) + ". " + str(player.get("username", "???")) + " - " + str(player.get("score", 0)) + "\n"
 	
-	text += "\n==================="
 	
 	leader.text = text

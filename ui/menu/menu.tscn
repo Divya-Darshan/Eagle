@@ -61,6 +61,7 @@ script = ExtResource("1_5uj2i")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=698723616]
 process_mode = 3
+visible = false
 self_modulate = Color(0, 0, 0, 0.529412)
 offset_left = -88.0
 offset_top = -72.0
@@ -78,6 +79,7 @@ passby_press = true
 
 [node name="close" type="TouchScreenButton" parent="." unique_id=1693127377]
 process_mode = 3
+visible = false
 position = Vector2(400, 16)
 scale = Vector2(2.349, 2.349)
 texture_normal = SubResource("AtlasTexture_r0u7i")
@@ -215,17 +217,17 @@ script = ExtResource("6_pjjyy")
 [node name="Timer" type="Timer" parent="close/HBoxContainer/fectch" unique_id=2058332963]
 
 [node name="leader" type="Label" parent="close/HBoxContainer/fectch" unique_id=915420081]
-offset_left = 178.2273
-offset_top = 257.34653
-offset_right = 678.2273
-offset_bottom = 1257.3466
+offset_left = 119.92869
+offset_top = 244.854
+offset_right = 348.6887
+offset_bottom = 544.854
+scale = Vector2(1.8, 1.8)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.537255)
 theme_override_fonts/font = ExtResource("3_iiwfg")
 text = "Loading..."
 metadata/_edit_use_anchors_ = true
 
 [node name="goon" parent="close" unique_id=484620503 instance=ExtResource("6_ah353")]
-visible = false
 offset_left = -160.068
 offset_top = 183.908
 offset_right = -92.0681

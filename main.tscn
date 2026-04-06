@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://0asph0ldn3st" path="res://icon/github.png" id="13_w48qg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ycdy4"]
+size = Vector2(20, 320.46564)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w48qg"]
 
@@ -82,7 +83,7 @@ position = Vector2(-45, -3)
 script = ExtResource("5_e4eth")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/Area2D" unique_id=1489390633]
-position = Vector2(592, 843)
+position = Vector2(592, 1624.9746)
 scale = Vector2(3686178600, -5.2050843)
 shape = SubResource("RectangleShape2D_ycdy4")
 
