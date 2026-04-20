@@ -1,72 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Eagle Privacy Policy</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Eagle - Privacy Policy</title>
 <style>
-  :root {
-    --bg: #fafafa;
-    --card: #ffffff;
-    --text: #111111;
-    --muted: #666666;
-    --line: #e7e7e7;
-    --accent: #111111;
+  :root{
+    --bg:#0b0f14;
+    --panel:#111722;
+    --panel-2:#0f141d;
+    --text:#e7edf5;
+    --muted:#9aa7b5;
+    --line:rgba(255,255,255,0.08);
+    --accent:#7cc7ff;
+    --shadow:0 18px 40px rgba(0,0,0,0.35);
   }
-  body {
-    margin: 0;
+
+  *{box-sizing:border-box}
+
+  body{
+    margin:0;
     font-family: Inter, Arial, Helvetica, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.7;
+    background:
+      radial-gradient(circle at top, rgba(124,199,255,0.08), transparent 35%),
+      linear-gradient(180deg, #0a0e13 0%, #0b0f14 100%);
+    color:var(--text);
+    line-height:1.7;
   }
-  .container {
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 48px 20px;
+
+  .container{
+    max-width:840px;
+    margin:0 auto;
+    padding:56px 20px;
   }
-  .header {
-    text-align: center;
-    margin-bottom: 28px;
+
+  .header{
+    text-align:center;
+    margin-bottom:28px;
   }
-  h1 {
-    margin: 0;
-    font-size: 34px;
-    letter-spacing: -0.03em;
+
+  h1{
+    margin:0;
+    font-size:clamp(32px, 4vw, 44px);
+    letter-spacing:-0.04em;
+    font-weight:700;
   }
-  .subtitle {
-    color: var(--muted);
-    margin-top: 8px;
-    font-size: 15px;
+
+  .subtitle{
+    margin-top:10px;
+    color:var(--muted);
+    font-size:15px;
   }
-  .section {
-    background: var(--card);
-    border: 1px solid var(--line);
-    border-radius: 18px;
-    padding: 22px 24px;
-    margin-top: 16px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.03);
+
+  .hero{
+    background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));
+    border:1px solid var(--line);
+    border-radius:20px;
+    padding:22px 24px;
+    box-shadow:var(--shadow);
+    backdrop-filter: blur(8px);
   }
-  h2 {
-    margin: 0 0 10px;
-    font-size: 18px;
+
+  .section{
+    margin-top:16px;
+    background:linear-gradient(180deg, var(--panel), var(--panel-2));
+    border:1px solid var(--line);
+    border-radius:20px;
+    padding:22px 24px;
+    box-shadow:var(--shadow);
   }
-  p, li {
-    font-size: 15px;
-    color: var(--text);
+
+  h2{
+    margin:0 0 10px;
+    font-size:18px;
+    letter-spacing:-0.02em;
   }
-  ul {
-    margin: 10px 0 0;
-    padding-left: 20px;
+
+  p, li{
+    font-size:15px;
+    color:var(--text);
   }
-  .contact {
-    color: var(--muted);
+
+  .muted{
+    color:var(--muted);
   }
-  footer {
-    text-align: center;
-    margin-top: 28px;
-    color: var(--muted);
-    font-size: 14px;
+
+  ul{
+    margin:10px 0 0;
+    padding-left:20px;
+  }
+
+  li{margin:6px 0}
+
+  .tag{
+    display:inline-block;
+    padding:6px 10px;
+    margin-top:12px;
+    border:1px solid rgba(124,199,255,0.18);
+    background:rgba(124,199,255,0.08);
+    color:var(--accent);
+    border-radius:999px;
+    font-size:12px;
+    letter-spacing:0.02em;
+  }
+
+  footer{
+    margin-top:26px;
+    text-align:center;
+    color:var(--muted);
+    font-size:14px;
+    padding-top:10px;
+  }
+
+  .accent{
+    color:var(--accent);
   }
 </style>
 </head>
@@ -77,12 +124,13 @@
       <div class="subtitle">Eagle • Last updated: February 2026</div>
     </div>
 
-    <div class="section">
+    <div class="hero">
       <p>Eagle is a simple Flappy Bird–style game built with Godot. We keep data collection to a minimum and only use limited gameplay data to support the online leaderboard.</p>
+      <div class="tag">Minimal Data • Simple Leaderboard • No Personal Info</div>
     </div>
 
     <div class="section">
-      <h2>Information We Collect</h2>
+      <h2>1. Information We Collect</h2>
       <p>Eagle does not collect personal information such as your name, email address, contacts, or location.</p>
       <ul>
         >Game score.</li>
@@ -91,28 +139,28 @@
     </div>
 
     <div class="section">
-      <h2>How We Use Data</h2>
-      <p>Scores and identifiers are used only to display rankings on the online leaderboard and compare results between players.</p>
+      <h2>2. How We Use Data</h2>
+      <p>The collected data is used only to display rankings on the online leaderboard and compare scores between players.</p>
     </div>
 
     <div class="section">
-      <h2>Third-Party Services</h2>
-      <p>The leaderboard is hosted by an external service that may process gameplay data only as needed to display scores.</p>
+      <h2>3. Online Leaderboard</h2>
+      <p>The leaderboard is hosted externally. That service may process gameplay data only as needed to display scores and rankings.</p>
     </div>
 
     <div class="section">
-      <h2>Data Storage</h2>
+      <h2>4. Data Storage</h2>
       <p>Leaderboard data is stored only for gameplay and ranking purposes and may be removed or reset at any time.</p>
     </div>
 
     <div class="section">
-      <h2>Children’s Privacy</h2>
+      <h2>5. Children’s Privacy</h2>
       <p>Eagle does not knowingly collect personal data from children.</p>
     </div>
 
     <div class="section">
-      <h2>Contact</h2>
-      <p class="contact">For questions or concerns, contact the developer through the official support channel listed with the app.</p>
+      <h2>6. Contact</h2>
+      <p class="muted">For questions or concerns, contact the developer through the official support channel listed with the app.</p>
     </div>
 
     <footer>
