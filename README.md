@@ -69,14 +69,6 @@ Tap, flap, dodge, survive  and compete to get the highest score!
 </div>
 
 ---
-## Eagle – A Fast, Addictive Arcade Game
-
-**Eagle** is a lightweight, fast-paced arcade game inspired by classic tap-to-fly mechanics. You control a small eagle navigating through endless obstacles, where timing and reflexes are everything. The longer you survive, the faster the game gets, making each run more intense than the last.
-
-It’s designed for quick sessions but has that “just one more try” feeling that keeps you coming back.
-
----
-
 ## How It Plays
 
 On mobile, you simply tap anywhere on the screen to keep the eagle in the air.  
