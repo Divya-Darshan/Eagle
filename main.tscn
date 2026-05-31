@@ -129,7 +129,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="start" type="TouchScreenButton" parent="startup/CanvasLayer" unique_id=1950276885]
 process_mode = 3
-position = Vector2(176, 279)
+position = Vector2(173.00003, 255)
 scale = Vector2(5, 5)
 texture_normal = SubResource("AtlasTexture_oe6v4")
 texture_pressed = SubResource("AtlasTexture_kffll")
