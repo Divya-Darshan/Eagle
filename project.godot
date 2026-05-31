@@ -17,11 +17,11 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 config/name="Eagle"
 run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.6", "Mobile")
-boot_splash/bg_color=Color(0.25565886, 0.25565878, 0.25565875, 1)
+boot_splash/bg_color=Color(0, 0, 0, 1)
 boot_splash/stretch_mode=0
 boot_splash/image="uid://lllxkxw7elua"
 config/icon="uid://bk8q6kt0tl250"
-boot_splash/minimum_display_time=4000
+boot_splash/minimum_display_time=3000
 
 [autoload]
 
