@@ -148,8 +148,8 @@ scale = Vector2(7.64877, 5.27079)
 color = Color(0.18359, 0.18359, 0.18359, 0.811765)
 
 [node name="username" parent="close/HBoxContainer/foot" unique_id=552422397 instance=ExtResource("5_n3nrh")]
-position = Vector2(-80.4952, 136.99844)
-scale = Vector2(0.247254, 0.247254)
+position = Vector2(-47.522083, 176.35345)
+scale = Vector2(0.2, 0.2)
 
 [node name="github" type="TouchScreenButton" parent="close/HBoxContainer/foot" unique_id=1406341162]
 position = Vector2(-132.196, 382.90063)
@@ -190,6 +190,7 @@ justification_flags = 0
 metadata/_edit_use_anchors_ = true
 
 [node name="apk" type="TouchScreenButton" parent="close/HBoxContainer/foot" unique_id=889611227]
+visible = false
 position = Vector2(-79.7861, 335.54626)
 scale = Vector2(0.46434772, 0.46434772)
 texture_normal = SubResource("AtlasTexture_763jh")
@@ -228,6 +229,7 @@ text = "Loading..."
 metadata/_edit_use_anchors_ = true
 
 [node name="goon" parent="close" unique_id=484620503 instance=ExtResource("6_ah353")]
+visible = false
 offset_left = -160.068
 offset_top = 183.908
 offset_right = -92.0681

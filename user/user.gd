@@ -27,7 +27,7 @@ func _ready():
 	print("Username:", username)
 
 func update_label():
-	label.text = "Hello, " + username
+	label.text = "UID: " + username
 
 func save_username():
 	var file := FileAccess.open(SAVE_PATH, FileAccess.WRITE)

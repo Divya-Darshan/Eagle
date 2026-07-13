@@ -5,18 +5,17 @@ Tap, flap, dodge, survive  and compete to get the highest score!
 
 ---
 
-## ✅ **Download the Game**
 
 <div align="center">
 
-### 🚀 **Download Eagle for Android**
+###  **Download Eagle on PlayStore**
 
 <a href="https://play.google.com/store/apps/details?id=com.darshni.eagle&pcampaignid=web_share">
-  <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" height="110"/>
+  <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" height="100"/>
 </a>
 
 
-### 🏆 **View Online Leaderboard**
+### 🏆 **Online Leaderboard**
 
 <a href="https://eagle-score.onrender.com/">
   <img src="https://img.shields.io/badge/View%20Leaderboard-FF7A00?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=0A0A0A&color=FF7A00" height="65"/>
@@ -70,47 +69,28 @@ Tap, flap, dodge, survive  and compete to get the highest score!
 </div>
 
 ---
+## How It Plays
 
-## 🎯 **About the Game**
+On mobile, you simply tap anywhere on the screen to keep the eagle in the air.  
+On PC, you can use the **Space** or **Enter** key to do the same.
 
-**Eagle** is a simple yet addictive tap-to-fly arcade game.  
-You control a tiny eagle trying to pass through endless pipes while the game becomes **faster and harder** over time.
-
-Perfect for:
-- quick play sessions  
-- testing reflexes  
-- beating your own high score  
-- challenging your friends  
+The goal is straightforward: avoid the pipes and stay alive as long as possible.  
+There are no complicated mechanics, just pure reaction and rhythm.
 
 ---
 
-## 🕹️ **How to Play**
+## Tech Stack
 
-### **Mobile**
-- Tap anywhere → flap upward  
-- Avoid pipes  
-- Survive as long as you can
-
-### **PC**
-- Press **Space** or **Enter** to flap  
-- Same rules — don’t crash!
+Built using **Godot** with **GDScript**, keeping the game lightweight, smooth, and easy to expand.
 
 ---
 
-## 🔧 **Built With**
-- **Godot 4.3**
-- **GDScript**
-
----
-
-
-
-# Screenshots
+## Screenshots
 
 <div align="center">
   <img src="./img/1.jpg" width="350"/> 
   <img src="./img/7.jpg" width="350"/> 
-  <img src="./img/2.jpg" width="350"/>  
+  <img src="./img/2.jpg" width="350"/> 
   <img src="./img/4.jpg" width="350"/> 
   <img src="./img/5.jpg" width="350"/> 
   <img src="./img/6.jpg" width="350"/> 
@@ -118,11 +98,12 @@ Perfect for:
 
 ---
 
-## 🤝 **Contributing**
-Pull requests are welcome!  <3
-If you’d like to improve visuals, UI, or gameplay, feel free to contribute.
+## Contributing
+
+If you have ideas to improve gameplay, visuals, or overall feel, feel free to open a pull request. Small tweaks or big changes, everything is welcome.
 
 ---
 
-## ⭐ Support the Project
-If you enjoy the game, **please star the repo** it really helps and motivates further development! ;D
+## Support
+
+If you enjoyed the game, consider starring the repository. It genuinely helps and keeps the project moving forward.
