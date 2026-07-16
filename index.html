@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<<<<<<< HEAD
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -14,11 +13,9 @@
 <style>
 :root{
     --bg:#0f0f10;
-    --surface:#17181b;
     --text:#f3f4f6;
     --muted:#9ca3af;
     --line:#26282d;
-    --accent:#ffffff;
 }
 
 *{
@@ -27,40 +24,45 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     background:var(--bg);
     color:var(--text);
     font-family:'Inter',sans-serif;
     line-height:1.8;
+    overflow-x:hidden;
 }
 
 .container{
-    max-width:760px;
+    width:min(760px,92%);
     margin:auto;
-    padding:80px 24px;
+    padding:80px 0;
 }
 
 .hero{
-    margin-bottom:80px;
+    margin-bottom:70px;
 }
 
 .logo{
-    font-size:4rem;
-    margin-bottom:10px;
+    font-size:clamp(3rem,8vw,4rem);
+    margin-bottom:12px;
 }
 
 .title{
-    font-size:4rem;
+    font-size:clamp(2.5rem,8vw,4rem);
     font-weight:800;
-    letter-spacing:0.18em;
+    letter-spacing:.15em;
     text-transform:uppercase;
 }
 
 .subtitle{
     margin-top:12px;
     color:var(--muted);
-    font-size:0.95rem;
-    letter-spacing:0.12em;
+    font-size:.95rem;
+    letter-spacing:.12em;
     text-transform:uppercase;
 }
 
@@ -71,15 +73,21 @@ body{
     color:#d1d5db;
 }
 
+.divider{
+    height:1px;
+    background:var(--line);
+    margin:50px 0;
+}
+
 .section{
     margin-top:60px;
 }
 
 .section h2{
-    font-size:0.95rem;
-    letter-spacing:0.18em;
-    text-transform:uppercase;
+    font-size:.95rem;
     color:var(--muted);
+    letter-spacing:.18em;
+    text-transform:uppercase;
     margin-bottom:18px;
 }
 
@@ -89,21 +97,15 @@ body{
 
 ul{
     margin-top:14px;
-    padding-left:20px;
+    padding-left:22px;
 }
 
 li{
     margin-bottom:8px;
 }
 
-.divider{
-    height:1px;
-    background:var(--line);
-    margin:50px 0;
-}
-
 .contact{
-    margin-top:14px;
+    margin-top:18px;
 }
 
 a{
@@ -120,307 +122,162 @@ footer{
     padding-top:30px;
     border-top:1px solid var(--line);
     color:var(--muted);
-    font-size:0.95rem;
+    font-size:.95rem;
 }
 
-@media(max-width:700px){
-
-    .title{
-        font-size:2.8rem;
-        letter-spacing:0.12em;
-    }
-
-    .logo{
-        font-size:3rem;
-    }
+@media (max-width:700px){
 
     .container{
-        padding:50px 20px;
+        width:90%;
+        padding:60px 0;
     }
+
+    .hero{
+        margin-bottom:50px;
+    }
+
+    .section{
+        margin-top:45px;
+    }
+
 }
 </style>
-=======
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eagle Privacy Policy</title>
-  <style>
-    :root {
-      --bg: #f7f7f5;
-      --card: #ffffff;
-      --text: #1f1f1f;
-      --muted: #666666;
-      --line: #e6e6e6;
-    }
 
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.7;
-    }
-
-    .container {
-      max-width: 820px;
-      margin: 0 auto;
-      padding: 48px 20px;
-    }
-
-    .header {
-      text-align: center;
-      margin-bottom: 28px;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 34px;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-    }
-
-    .subtitle {
-      margin-top: 8px;
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    .section {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 20px 22px;
-      margin-top: 16px;
-    }
-
-    h2 {
-      margin: 0 0 10px 0;
-      font-size: 18px;
-      font-weight: 700;
-    }
-
-    p, li {
-      font-size: 15px;
-      margin: 0;
-    }
-
-    ul {
-      margin: 10px 0 0 0;
-      padding-left: 20px;
-    }
-
-    li {
-      margin: 6px 0;
-    }
-
-    a {
-      color: #1f1f1f;
-      text-decoration: underline;
-    }
-
-    footer {
-      margin-top: 28px;
-      text-align: center;
-      color: var(--muted);
-      font-size: 14px;
-      padding-top: 8px;
-    }
-  </style>
->>>>>>> 6ac839dd0381f498ad7c426fbbfdf4b1dcf59bc4
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <h1>Privacy Policy</h1>
-      <div class="subtitle">Eagle • Last updated: February 2026</div>
-    </div>
 
-    <div class="section">
-      <p>
-        Eagle is a simple Flappy Bird–style game built with Godot. We keep data collection to a minimum and only use limited gameplay data to support the online leaderboard.
-      </p>
-    </div>
+<div class="container">
 
-<<<<<<< HEAD
-    <section class="hero">
-        <div class="logo">🦅</div>
+<section class="hero">
 
-        <h1 class="title">Eagle</h1>
+<h1 class="title">Eagle Tap</h1>
 
-        <div class="subtitle">
-            Privacy Policy · February 2026
-        </div>
+<div class="subtitle">
+Privacy Policy • Last Updated: February 2026
+</div>
 
-        <p class="intro">
-            Eagle is a simple Flappy Bird–style parody game built with the Godot Engine.
-            The game is designed to collect as little information as possible.
-        </p>
-    </section>
+<p class="intro">
+Eagle is a simple Flappy Bird style game built with the Godot Engine.
+We value your privacy and collect only the minimum information required
+to provide the online leaderboard.
+</p>
 
-    <div class="divider"></div>
+</section>
 
-    <section class="section">
-        <h2>Information We Collect</h2>
+<div class="divider"></div>
 
-        <p>
-            Eagle does not collect personal information such as your name,
-            email address, contacts, or location.
-        </p>
+<section class="section">
 
-        <ul>
-            <li>Game score</li>
-            <li>Temporary player identifier used only for leaderboard ranking</li>
-        </ul>
+<h2>Information We Collect</h2>
 
-        <p>
-            This information is used only to display scores on the online leaderboard.
-        </p>
-    </section>
+<p>
+Eagle does not collect personal information such as your name, email address,
+phone number, contacts, location, photos, microphone, or camera data.
+</p>
 
-    <section class="section">
-        <h2>Online Leaderboard</h2>
+<ul>
+<li>Your game score.</li>
+<li>A temporary player identifier used only for leaderboard rankings.</li>
+</ul>
 
-        <p>
-            If you submit a score, it is sent to the Eagle leaderboard server to:
-        </p>
+</section>
 
-        <ul>
-            <li>Display rankings</li>
-            <li>Compare scores between players</li>
-        </ul>
+<section class="section">
 
-        <p>
-            No personal identity information is required or stored.
-        </p>
-    </section>
+<h2>How We Use Your Data</h2>
 
-    <section class="section">
-        <h2>Third-Party Services</h2>
+<p>
+The limited information collected is used only to:
+</p>
 
-        <p>
-            The leaderboard service is hosted externally.
-            These services may temporarily process gameplay data necessary
-            to display scores.
-        </p>
-    </section>
+<ul>
+<li>Display your score on the online leaderboard.</li>
+<li>Rank players based on their scores.</li>
+<li>Maintain normal gameplay features.</li>
+</ul>
 
-    <section class="section">
-        <h2>Data Storage</h2>
+</section>
 
-        <p>
-            Leaderboard data is stored only for gameplay and ranking purposes
-            and may be removed or reset at any time.
-        </p>
-    </section>
+<section class="section">
 
-    <section class="section">
-        <h2>Children's Privacy</h2>
+<h2>Online Leaderboard</h2>
 
-        <p>
-            Eagle does not knowingly collect personal data from children.
-            The game is safe to play for all ages.
-        </p>
-    </section>
+<p>
+When you submit a score, it is securely sent to the Eagle leaderboard server.
+No personal identity information is attached to your score.
+</p>
 
-    <section class="section">
-        <h2>Changes To This Policy</h2>
+</section>
 
-        <p>
-            This privacy policy may be updated in the future.
-            Updates will be posted on this page.
-        </p>
-    </section>
+<section class="section">
 
-    <section class="section">
-        <h2>Contact</h2>
+<h2>Third-Party Services</h2>
 
-        <p class="contact">
-            <a href="https://www.youtube.com/@darshnidev">
-                darshniDev — YouTube / Developer
-            </a>
-        </p>
-    </section>
+<p>
+The online leaderboard may use trusted third-party hosting providers.
+These services process only the gameplay information required to store and
+display leaderboard scores.
+</p>
 
-    <footer>
-        By playing Eagle, you agree to this Privacy Policy.
-    </footer>
+</section>
+
+<section class="section">
+
+<h2>Data Storage</h2>
+
+<p>
+Leaderboard information is stored only for gameplay purposes.
+Scores may be reset or removed at any time without prior notice.
+</p>
+
+</section>
+
+<section class="section">
+
+<h2>Children's Privacy</h2>
+
+<p>
+Eagle is suitable for players of all ages.
+We do not knowingly collect personal information from children.
+</p>
+
+</section>
+
+<section class="section">
+
+<h2>Changes to This Policy</h2>
+
+<p>
+This Privacy Policy may be updated from time to time.
+Any future updates will be published on this page.
+</p>
+
+</section>
+
+<section class="section">
+
+<h2>Contact</h2>
+
+<p class="contact">
+If you have any questions regarding this Privacy Policy, you can contact the developer at:
+</p>
+
+<p class="contact">
+<a href="https://www.youtube.com/@darshnidev" target="_blank">
+(darshniDev)YT
+</a> <br>
+<a href="https://www.x.com/darshnidev" target="_blank">
+(darshniDev)X
+</a>
+</p>
+
+</section>
+
+<footer>
+© 2026 Eagle. By playing Eagle, you agree to this Privacy Policy.
+</footer>
 
 </div>
-=======
-    <div class="section">
-      <h2>1. Information We Collect</h2>
-      <p>
-        Eagle does not collect personal information such as your name, email address, contacts, or location.
-      </p>
-      <ul>
-        <li>Game score.</li>
-        <li>Temporary player identifier used for leaderboard ranking.</li>
-      </ul>
-      <p style="margin-top: 10px;">
-        This information is used only to display scores on the online leaderboard.
-      </p>
-    </div>
 
-    <div class="section">
-      <h2>2. Online Leaderboard</h2>
-      <p>
-        If you submit a score, it is sent to the Eagle online leaderboard server to display rankings and compare scores between players.
-      </p>
-      <p style="margin-top: 10px;">
-        No personal identity information is required or stored.
-      </p>
-    </div>
-
-    <div class="section">
-      <h2>3. Third-Party Services</h2>
-      <p>
-        The leaderboard service is hosted externally. These services may temporarily process gameplay data necessary to display scores.
-      </p>
-    </div>
-
-    <div class="section">
-      <h2>4. Data Storage</h2>
-      <p>
-        Leaderboard data is stored only for gameplay and ranking purposes and may be removed or reset at any time.
-      </p>
-    </div>
-
-    <div class="section">
-      <h2>5. Children’s Privacy</h2>
-      <p>
-        Eagle does not knowingly collect personal data from children. The game is safe to play for all ages.
-      </p>
-    </div>
-
-    <div class="section">
-      <h2>6. Changes to This Policy</h2>
-      <p>
-        This privacy policy may be updated in the future. Updates will be posted on this page.
-      </p>
-    </div>
-
-    <div class="section">
-      <h2>7. Contact</h2>
-      <p>
-        For questions or concerns, contact:
-      </p>
-      <p style="margin-top: 8px;">
-        <strong>
-          <a href="https://www.youtube.com/@darshnidev" target="_blank" rel="noopener noreferrer">
-            darshniDev
-          </a>
-          (YouTube / Developer)
-        </strong>
-      </p>
-    </div>
->>>>>>> 6ac839dd0381f498ad7c426fbbfdf4b1dcf59bc4
-
-    <footer>
-      By playing Eagle, you agree to this Privacy Policy.
-    </footer>
-  </div>
 </body>
 </html>
