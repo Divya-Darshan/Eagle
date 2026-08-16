@@ -31,12 +31,24 @@ func _on_reset_pressed() -> void:
 	get_tree().paused = false
 	get_tree().reload_current_scene()
 
+
+
+
 func _on_resume_pressed() -> void:
 	await get_tree().create_timer(0.1).timeout
-	color_rect.visible = false
-	close.visible = false
-	open.visible = true
 	get_tree().paused = false
+	get_tree().reload_current_scene()
+	
+	
+'''@hembramlegendarystudio
+59 minutes ago
+You should add the game automatically reset to the new pipes because when I die in that game i play again I revive near the platform I die
+'''
+	#await get_tree().create_timer(0.1).timeout
+	#color_rect.visible = false
+	#close.visible = false
+	#open.visible = true
+	#get_tree().paused = false
 
 
 
