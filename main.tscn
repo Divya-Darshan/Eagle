@@ -83,7 +83,7 @@ position = Vector2(-45, -3)
 script = ExtResource("5_e4eth")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/Area2D" unique_id=1489390633]
-position = Vector2(592, 1624.9746)
+position = Vector2(1401794.1, 1991.0002)
 scale = Vector2(3686178600, -5.2050843)
 shape = SubResource("RectangleShape2D_ycdy4")
 

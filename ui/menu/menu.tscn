@@ -80,7 +80,7 @@ passby_press = true
 [node name="close" type="TouchScreenButton" parent="." unique_id=1693127377]
 process_mode = 3
 visible = false
-position = Vector2(400, 16)
+position = Vector2(399.99997, 14)
 scale = Vector2(2.349, 2.349)
 texture_normal = SubResource("AtlasTexture_r0u7i")
 texture_pressed = SubResource("AtlasTexture_0pj3s")
@@ -111,6 +111,7 @@ texture_normal = SubResource("AtlasTexture_t8i6k")
 texture_pressed = SubResource("AtlasTexture_ly41m")
 
 [node name="Label" type="Label" parent="close/resume" unique_id=1475392372]
+visible = false
 offset_left = 1.13523
 offset_top = -9.08189
 offset_right = 45.1352
