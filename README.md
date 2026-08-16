@@ -79,12 +79,6 @@ There are no complicated mechanics, just pure reaction and rhythm.
 
 ---
 
-## Tech Stack
-
-Built using **Godot** with **GDScript**, keeping the game lightweight, smooth, and easy to expand.
-
----
-
 ## Screenshots
 
 <div align="center">
