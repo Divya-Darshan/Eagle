@@ -54,7 +54,7 @@ Tap, flap, dodge, survive  and compete to get the highest score!
 
 ---
 
-## 🎮 **Gameplay Preview**
+## **Gameplay Preview**
 
 <div align="center">
 
