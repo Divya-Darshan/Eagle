@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://da8iu04wpmkii"]
 
 [ext_resource type="Script" uid="uid://c0l7q5ta8sfx8" path="res://Tiles/pole.gd" id="1_nl635"]
-[ext_resource type="Texture2D" uid="uid://b07k3lrp011pa" path="res://Tiles/Style 1/PipeStyle1.png" id="1_unko7"]
 [ext_resource type="AudioStream" uid="uid://bvar7fp45a4ab" path="res://sfx/fa.mp3" id="3_7b02l"]
+[ext_resource type="Texture2D" uid="uid://bnbagusnvby46" path="res://Tiles/lo.png" id="3_p3xcw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1pac1"]
 size = Vector2(30.7988, 19.0986)
@@ -14,150 +14,18 @@ scale = Vector2(1.3309, 1.3309)
 script = ExtResource("1_nl635")
 
 [node name="polesprites" type="Node2D" parent="." unique_id=848551846]
+scale = Vector2(0.9502477, 0.9502477)
 
-[node name="PipeStyle1" type="Sprite2D" parent="polesprites" unique_id=293716683]
-texture_filter = 1
-position = Vector2(-0.968643, 0.55879194)
-scale = Vector2(2.11498, 2.11498)
-texture = ExtResource("1_unko7")
-region_enabled = true
-region_rect = Rect2(-0.514587, 0, 32.5665, 60.5923)
+[node name="Lo" type="Sprite2D" parent="polesprites" unique_id=159112043]
+self_modulate = Color(0, 0, 0, 1)
+position = Vector2(-1.6262145, 509.60263)
+scale = Vector2(1.6736789, 1.6736789)
+texture = ExtResource("3_p3xcw")
 
-[node name="PipeStyle2" type="Sprite2D" parent="polesprites" unique_id=1475572017]
-texture_filter = 1
-position = Vector2(-0.968643, 95)
-scale = Vector2(2.11498, 2.11498)
-texture = ExtResource("1_unko7")
-region_enabled = true
-region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
-
-[node name="PipeStyle3" type="Sprite2D" parent="polesprites" unique_id=1330083112]
-texture_filter = 1
-position = Vector2(-0.968643, 169)
-scale = Vector2(2.11498, 2.11498)
-texture = ExtResource("1_unko7")
-region_enabled = true
-region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
-
-[node name="PipeStyle4" type="Sprite2D" parent="polesprites" unique_id=486361347]
-texture_filter = 1
-position = Vector2(-0.968643, 234)
-scale = Vector2(2.11498, 2.11498)
-texture = ExtResource("1_unko7")
-region_enabled = true
-region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
-
-[node name="PipeStyle5" type="Sprite2D" parent="polesprites" unique_id=2086301183]
-texture_filter = 1
-position = Vector2(-0.968643, 305)
-scale = Vector2(2.11498, 2.11498)
-texture = ExtResource("1_unko7")
-region_enabled = true
-region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
-
-[node name="PipeStyle6" type="Sprite2D" parent="polesprites" unique_id=1162185383]
-texture_filter = 1
-position = Vector2(-0.968643, 376.99997)
-scale = Vector2(2.11498, 2.11498)
-texture = ExtResource("1_unko7")
-region_enabled = true
-region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
-
-[node name="PipeStyle7" type="Sprite2D" parent="polesprites" unique_id=1517392004]
-texture_filter = 1
-position = Vector2(-0.968643, 447.99997)
-scale = Vector2(2.11498, 2.11498)
-texture = ExtResource("1_unko7")
-region_enabled = true
-region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
-
-[node name="PipeStyle8" type="Sprite2D" parent="polesprites" unique_id=1411263106]
-texture_filter = 1
-position = Vector2(-0.968643, 518)
-scale = Vector2(2.11498, 2.11498)
-texture = ExtResource("1_unko7")
-region_enabled = true
-region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
-
-[node name="PipeStyle9" type="Sprite2D" parent="polesprites" unique_id=1358224844]
-texture_filter = 1
-position = Vector2(-0.968643, 591)
-scale = Vector2(2.11498, 2.11498)
-texture = ExtResource("1_unko7")
-region_enabled = true
-region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
-
-[node name="PipeStyle10" type="Sprite2D" parent="polesprites" unique_id=583103472]
-texture_filter = 1
-position = Vector2(-0.968643, 659)
-scale = Vector2(2.11498, 2.11498)
-texture = ExtResource("1_unko7")
-region_enabled = true
-region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
-
-[node name="PipeStyle11" type="Sprite2D" parent="polesprites" unique_id=1299061930]
-texture_filter = 1
-position = Vector2(-0.968643, 732)
-scale = Vector2(2.11498, 2.11498)
-texture = ExtResource("1_unko7")
-region_enabled = true
-region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
-
-[node name="PipeStyle14" type="Sprite2D" parent="polesprites" unique_id=1263151403]
-texture_filter = 1
-position = Vector2(-0.968643, 898)
-scale = Vector2(2.11498, 2.11498)
-texture = ExtResource("1_unko7")
-region_enabled = true
-region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
-
-[node name="PipeStyle15" type="Sprite2D" parent="polesprites" unique_id=1553319062]
-texture_filter = 1
-position = Vector2(-0.968643, 1002)
-scale = Vector2(2.11498, 2.11498)
-texture = ExtResource("1_unko7")
-region_enabled = true
-region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
-
-[node name="PipeStyle17" type="Sprite2D" parent="polesprites" unique_id=775814703]
-texture_filter = 1
-position = Vector2(-0.968643, 1058)
-scale = Vector2(2.11498, 2.11498)
-texture = ExtResource("1_unko7")
-region_enabled = true
-region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
-
-[node name="PipeStyle18" type="Sprite2D" parent="polesprites" unique_id=1651312901]
-texture_filter = 1
-position = Vector2(-0.968643, 1109)
-scale = Vector2(2.11498, 2.11498)
-texture = ExtResource("1_unko7")
-region_enabled = true
-region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
-
-[node name="PipeStyle16" type="Sprite2D" parent="polesprites" unique_id=2126346728]
-texture_filter = 1
-position = Vector2(-0.968643, 943)
-scale = Vector2(2.11498, 2.11498)
-texture = ExtResource("1_unko7")
-region_enabled = true
-region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
-
-[node name="PipeStyle13" type="Sprite2D" parent="polesprites" unique_id=2007968499]
-texture_filter = 1
-position = Vector2(-0.968643, 839)
-scale = Vector2(2.11498, 2.11498)
-texture = ExtResource("1_unko7")
-region_enabled = true
-region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
-
-[node name="PipeStyle12" type="Sprite2D" parent="polesprites" unique_id=1253292375]
-texture_filter = 1
-position = Vector2(-0.968643, 790.99994)
-scale = Vector2(2.11498, 2.11498)
-texture = ExtResource("1_unko7")
-region_enabled = true
-region_rect = Rect2(-0.514587, 24, 32.5665, 36.5923)
+[node name="Lo2" type="Sprite2D" parent="polesprites" unique_id=218843104]
+position = Vector2(-0.8748431, 494.57523)
+scale = Vector2(1.617081, 1.617081)
+texture = ExtResource("3_p3xcw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=372281941]
 position = Vector2(-0.751371, 520.7)

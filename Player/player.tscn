@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bcfqy1f1jv3p4" path="res://Player/StyleBird1/Bird1-3.png" id="2_gwnis"]
 [ext_resource type="AudioStream" uid="uid://bkv8sy1rcil8u" path="res://sfx/yamete.mp3" id="3_ggbhd"]
 [ext_resource type="AudioStream" uid="uid://bqw1pptn7l4bq" path="res://sfx/bruh.mp3" id="3_gwnis"]
+[ext_resource type="Texture2D" uid="uid://dna8nhqp37ikb" path="res://hat.png" id="5_k53q1"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k53q1"]
 atlas = ExtResource("2_gwnis")
@@ -27,7 +28,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_k53q1")
 }],
-"loop": false,
+"loop": 0,
 "name": &"default",
 "speed": 5.0
 }, {
@@ -116,7 +117,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_od3ui")
 }],
-"loop": true,
+"loop": 1,
 "name": &"fly",
 "speed": 10.0
 }]
@@ -129,6 +130,7 @@ scale = Vector2(6.7901077, 6.7901077)
 script = ExtResource("1_jnjht")
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=859158960]
+visible = false
 texture_filter = 1
 position = Vector2(0.352256, -0.733002)
 scale = Vector2(0.4315442, 0.4237897)
@@ -150,3 +152,8 @@ volume_db = 1.104
 position = Vector2(0.00702408, 1.68362)
 stream = ExtResource("3_ggbhd")
 volume_db = 24.0
+
+[node name="Hat" type="Sprite2D" parent="." unique_id=1689293792]
+position = Vector2(-0.58909225, -0.58909225)
+scale = Vector2(0.3313957, 0.3313957)
+texture = ExtResource("5_k53q1")
