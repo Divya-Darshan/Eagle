@@ -23,7 +23,7 @@ Tap, flap, dodge, survive  and compete to get the highest score!
 <br>
 <br>
 
-### 🚀 **Download Eagle APK**
+### **Download Eagle APK**
 
 <a href="https://github.com/Divya-Darshan/Eagle/raw/refs/heads/main/app/eagle.apk">
   <img src="https://img.shields.io/badge/Download%20APK-2abaf6?style=for-the-badge&logo=android&logoColor=white&labelColor=0A0A0A&color=6acaf6" height="65"/>
@@ -33,7 +33,7 @@ Tap, flap, dodge, survive  and compete to get the highest score!
 
 <div align="center">
 
-### 📁 **Server Repo for the Online Leaderboard**
+### **Server Repo Online Leaderboard**
 
 <a href="https://github.com/Divya-Darshan/eagle_server">
   <img src="https://img.shields.io/badge/Server%20Repository-6F42C1?style=for-the-badge&logo=github&logoColor=white&labelColor=0A0A0A&color=6F42C1" height="65"/>
@@ -41,15 +41,6 @@ Tap, flap, dodge, survive  and compete to get the highest score!
 
 </div>
 
-<div align="center">
-
-### 🫂 **Privacy Policy**
-
-<a href="https://divya-darshan.github.io/Eagle/">
-  <img src="https://img.shields.io/badge/Privacy%20Policy-6F42C1?style=for-the-badge&logo=github&logoColor=white&labelColor=0A0A0A&color=1C7CFF" height="65"/>
-</a>
-
-</div>
 
 
 ---
